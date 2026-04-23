@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Large Model Weights (DO NOT PUSH THESE)
+lora_*/
+checkpoint-*/
+adapter_model.bin
+adapter_model.safetensors
+pytorch_model.bin
+*.pt
+*.safetensors
+
+# Data
+*.csv
+*.jsonl
+!Lora LLM/datasets/*.jsonl
+
+# Logs and Checkpoints
+*.log
+.ipynb_checkpoints/
+.vscode/
+
+# Dashboard Output (Keep if you want it on GitHub)
+# Master Dashboard/project_master_dashboard.png

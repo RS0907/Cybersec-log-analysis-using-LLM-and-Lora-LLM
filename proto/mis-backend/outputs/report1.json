@@ -1,0 +1,2097 @@
+{
+  "overview": {
+    "total_attacks": 208,
+    "unique_attack_types": 1,
+    "most_frequent_attack": "SSH Brute Force"
+  },
+  "attack_summary": [
+    {
+      "attack_type": "SSH Brute Force",
+      "count": 208,
+      "owasp_category": "Broken Authentication",
+      "severity": "HIGH"
+    }
+  ],
+  "events": [
+    {
+      "timestamp": "Dec 10 06:55:46",
+      "source_ip": "173.234.31.186",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block the IP"
+    },
+    {
+      "timestamp": "Dec 10 07:02:47",
+      "source_ip": "212.47.254.145",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block the IP"
+    },
+    {
+      "timestamp": "Dec 10 07:07:38",
+      "source_ip": "52.80.34.196",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block the IP"
+    },
+    {
+      "timestamp": "Dec 10 07:08:28",
+      "source_ip": "173.234.31.186",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block the IP and consider firewall rule changes"
+    },
+    {
+      "timestamp": "Dec 10 07:11:42",
+      "source_ip": "202.100.179.208",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block the IP"
+    },
+    {
+      "timestamp": "Dec 10 07:13:31",
+      "source_ip": "5.36.59.76",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block the IP and consider firewall rule changes"
+    },
+    {
+      "timestamp": "Dec 10 07:13:43",
+      "source_ip": "5.36.59.76",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block the IP and consider firewall rule changes"
+    },
+    {
+      "timestamp": "Dec 10 07:27:50",
+      "source_ip": "112.95.230.3",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block the IP and consider firewall rule changes"
+    },
+    {
+      "timestamp": "Dec 10 07:28:25",
+      "source_ip": "112.95.230.3",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block the IP and consider firewall rule changes"
+    },
+    {
+      "timestamp": "Dec 10 07:28:39",
+      "source_ip": "112.95.230.3",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block the IP"
+    },
+    {
+      "timestamp": "Dec 10 07:32:27",
+      "source_ip": "123.235.32.19",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block the IP"
+    },
+    {
+      "timestamp": "Dec 10 07:34:00",
+      "source_ip": "123.235.32.19",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block the IP and increase logging"
+    },
+    {
+      "timestamp": "Dec 10 07:42:49",
+      "source_ip": "183.136.162.51",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block the IP"
+    },
+    {
+      "timestamp": "Dec 10 07:48:00",
+      "source_ip": "191.210.223.172",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block the IP and increase logging"
+    },
+    {
+      "timestamp": "Dec 10 07:51:12",
+      "source_ip": "195.154.37.122",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block the IP"
+    },
+    {
+      "timestamp": "Dec 10 07:55:55",
+      "source_ip": "52.80.34.196",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block the IP and increase logging"
+    },
+    {
+      "timestamp": "Dec 10 08:08:41",
+      "source_ip": "175.102.13.6",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block the IP"
+    },
+    {
+      "timestamp": "Dec 10 08:24:32",
+      "source_ip": "5.188.10.180",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block the IP and increase logging"
+    },
+    {
+      "timestamp": "Dec 10 08:24:50",
+      "source_ip": "5.188.10.180",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP"
+    },
+    {
+      "timestamp": "Dec 10 08:25:28",
+      "source_ip": "5.188.10.180",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP"
+    },
+    {
+      "timestamp": "Dec 10 08:26:00",
+      "source_ip": "5.188.10.180",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP"
+    },
+    {
+      "timestamp": "Dec 10 08:33:26",
+      "source_ip": "103.207.39.212",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Monitor"
+    },
+    {
+      "timestamp": "Dec 10 08:39:49",
+      "source_ip": "106.5.5.195",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP"
+    },
+    {
+      "timestamp": "Dec 10 08:44:27",
+      "source_ip": "52.80.34.196",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Monitor"
+    },
+    {
+      "timestamp": "Dec 10 09:07:58",
+      "source_ip": "185.190.58.151",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and investigate"
+    },
+    {
+      "timestamp": "Dec 10 09:11:03",
+      "source_ip": "103.99.0.122",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Monitor and alert"
+    },
+    {
+      "timestamp": "Dec 10 09:11:25",
+      "source_ip": "103.99.0.122",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Monitor and alert"
+    },
+    {
+      "timestamp": "Dec 10 09:11:31",
+      "source_ip": "103.99.0.122",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Monitor and alert"
+    },
+    {
+      "timestamp": "Dec 10 09:11:34",
+      "source_ip": "103.99.0.122",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Monitor and alert"
+    },
+    {
+      "timestamp": "Dec 10 09:11:52",
+      "source_ip": "103.99.0.122",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP"
+    },
+    {
+      "timestamp": "Dec 10 09:12:00",
+      "source_ip": "103.99.0.122",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP"
+    },
+    {
+      "timestamp": "Dec 10 09:12:08",
+      "source_ip": "185.190.58.151",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP"
+    },
+    {
+      "timestamp": "Dec 10 09:12:15",
+      "source_ip": "103.99.0.122",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP"
+    },
+    {
+      "timestamp": "Dec 10 09:12:21",
+      "source_ip": "103.99.0.122",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP"
+    },
+    {
+      "timestamp": "Dec 10 09:12:24",
+      "source_ip": "103.99.0.122",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP"
+    },
+    {
+      "timestamp": "Dec 10 09:12:40",
+      "source_ip": "103.99.0.122",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attacks"
+    },
+    {
+      "timestamp": "Dec 10 09:12:59",
+      "source_ip": "185.190.58.151",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Monitor and block IP if necessary"
+    },
+    {
+      "timestamp": "Dec 10 09:13:05",
+      "source_ip": "187.141.143.180",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attacks"
+    },
+    {
+      "timestamp": "Dec 10 09:13:10",
+      "source_ip": "187.141.143.180",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attacks"
+    },
+    {
+      "timestamp": "Dec 10 09:13:15",
+      "source_ip": "187.141.143.180",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attacks"
+    },
+    {
+      "timestamp": "Dec 10 09:13:20",
+      "source_ip": "187.141.143.180",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attacks"
+    },
+    {
+      "timestamp": "Dec 10 09:13:25",
+      "source_ip": "187.141.143.180",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attacks"
+    },
+    {
+      "timestamp": "Dec 10 09:14:30",
+      "source_ip": "187.141.143.180",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and investigate further"
+    },
+    {
+      "timestamp": "Dec 10 09:15:04",
+      "source_ip": "187.141.143.180",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Monitor for further activity and consider blocking IP"
+    },
+    {
+      "timestamp": "Dec 10 09:15:20",
+      "source_ip": "187.141.143.180",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Monitor for further activity and consider blocking IP"
+    },
+    {
+      "timestamp": "Dec 10 09:15:36",
+      "source_ip": "187.141.143.180",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Monitor for further activity and consider blocking IP"
+    },
+    {
+      "timestamp": "Dec 10 09:15:52",
+      "source_ip": "187.141.143.180",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Monitor for further activity and consider blocking IP"
+    },
+    {
+      "timestamp": "Dec 10 09:16:08",
+      "source_ip": "187.141.143.180",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Monitor for further activity and consider blocking IP"
+    },
+    {
+      "timestamp": "Dec 10 09:16:24",
+      "source_ip": "187.141.143.180",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Monitor for further activity and consider blocking IP"
+    },
+    {
+      "timestamp": "2023-12-10T09:16:43",
+      "source_ip": "187.141.143.180",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP and investigate"
+    },
+    {
+      "timestamp": "2023-12-10T09:17:00",
+      "source_ip": "187.141.143.180",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and investigate"
+    },
+    {
+      "timestamp": "2023-12-10T09:17:12",
+      "source_ip": "187.141.143.180",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and investigate"
+    },
+    {
+      "timestamp": "2023-12-10T09:17:23",
+      "source_ip": "187.141.143.180",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and investigate"
+    },
+    {
+      "timestamp": "2023-12-10T09:17:33",
+      "source_ip": "187.141.143.180",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and investigate"
+    },
+    {
+      "timestamp": "2023-12-10T09:17:43",
+      "source_ip": "187.141.143.180",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and investigate"
+    },
+    {
+      "timestamp": "2023-12-10T09:17:54",
+      "source_ip": "187.141.143.180",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and investigate"
+    },
+    {
+      "timestamp": "Dec 10 09:18:06",
+      "source_ip": "187.141.143.180",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP address"
+    },
+    {
+      "timestamp": "Dec 10 09:18:12",
+      "source_ip": "187.141.143.180",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP address"
+    },
+    {
+      "timestamp": "Dec 10 09:18:18",
+      "source_ip": "187.141.143.180",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP address and investigate possible break-in attempt"
+    },
+    {
+      "timestamp": "Dec 10 09:18:24",
+      "source_ip": "103.207.39.16",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP address"
+    },
+    {
+      "timestamp": "Dec 10 09:18:30",
+      "source_ip": "187.141.143.180",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP address and investigate possible break-in attempt"
+    },
+    {
+      "timestamp": "Dec 10 09:18:33",
+      "source_ip": "103.207.39.16",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP address"
+    },
+    {
+      "timestamp": "Dec 10 09:18:35",
+      "source_ip": "187.141.143.180",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP address and investigate possible break-in attempt"
+    },
+    {
+      "timestamp": "Dec 10 09:18:42",
+      "source_ip": "187.141.143.180",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP address and investigate possible break-in attempt"
+    },
+    {
+      "timestamp": "Dec 10 09:18:48",
+      "source_ip": "187.141.143.180",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP address and investigate possible break-in attempt"
+    },
+    {
+      "timestamp": "Dec 10 09:18:54",
+      "source_ip": "187.141.143.180",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP address and investigate possible break-in attempt"
+    },
+    {
+      "timestamp": "Dec 10 09:19:00",
+      "source_ip": "187.141.143.180",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP address and investigate possible break-in attempt"
+    },
+    {
+      "timestamp": "Dec 10 09:19:06",
+      "source_ip": "187.141.143.180",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP address and investigate possible break-in attempt"
+    },
+    {
+      "timestamp": "Dec 10 09:19:11",
+      "source_ip": "187.141.143.180",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP address and investigate possible break-in attempt"
+    },
+    {
+      "timestamp": "Dec 10 09:19:17",
+      "source_ip": "187.141.143.180",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP address and investigate possible break-in attempt"
+    },
+    {
+      "timestamp": "2023-12-10 09:19:20",
+      "source_ip": "187.141.143.180",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP"
+    },
+    {
+      "timestamp": "2023-12-10 09:31:22",
+      "source_ip": "104.192.3.34",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Monitor traffic"
+    },
+    {
+      "timestamp": "2023-12-10 09:32:20",
+      "source_ip": "119.137.62.142",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Monitor traffic"
+    },
+    {
+      "timestamp": "2023-12-10 09:48:23",
+      "source_ip": "181.214.87.4",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP"
+    },
+    {
+      "timestamp": "2023-12-10 10:04:52",
+      "source_ip": "60.2.12.12",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP"
+    },
+    {
+      "timestamp": "Dec 10 10:14:13",
+      "source_ip": "119.4.203.64",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block the IP address"
+    },
+    {
+      "timestamp": "Dec 10 10:21:01",
+      "source_ip": "52.80.34.196",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Monitor the login attempts and block the IP address if necessary"
+    },
+    {
+      "timestamp": "Dec 10 10:32:27",
+      "source_ip": "183.136.162.51",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Monitor the login attempts and block the IP address if necessary"
+    },
+    {
+      "timestamp": "Dec 10 10:54:27",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block the IP address and notify the security team"
+    },
+    {
+      "timestamp": "Dec 10 10:57:22",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 10:57:24",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 10:57:26",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 10:57:28",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 10:57:30",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 10:57:32",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 10:57:34",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 10:57:36",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 10:57:38",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 10:57:40",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 10:57:42",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 10:57:44",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 10:57:46",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 10:57:48",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 10:58:35",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 10:58:37",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 10:58:39",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 10:58:41",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 10:58:43",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 10:58:45",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 10:58:47",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 10:58:49",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 10:58:51",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 10:58:53",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 10:58:55",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 10:58:57",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 10:58:59",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 10:59:1",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 10:59:3",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 10:59:5",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:00:30",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP address and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:00:30",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP address and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:00:30",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP address and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:00:30",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP address and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:00:50",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attacks"
+    },
+    {
+      "timestamp": "Dec 10 11:00:52",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attacks"
+    },
+    {
+      "timestamp": "Dec 10 11:00:54",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attacks"
+    },
+    {
+      "timestamp": "Dec 10 11:00:56",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attacks"
+    },
+    {
+      "timestamp": "Dec 10 11:00:58",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attacks"
+    },
+    {
+      "timestamp": "Dec 10 11:01:00",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attacks"
+    },
+    {
+      "timestamp": "Dec 10 11:01:02",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attacks"
+    },
+    {
+      "timestamp": "Dec 10 11:01:04",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attacks"
+    },
+    {
+      "timestamp": "Dec 10 11:01:06",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attacks"
+    },
+    {
+      "timestamp": "Dec 10 11:01:08",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attacks"
+    },
+    {
+      "timestamp": "Dec 10 11:01:10",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attacks"
+    },
+    {
+      "timestamp": "Dec 10 11:01:12",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attacks"
+    },
+    {
+      "timestamp": "Dec 10 11:01:14",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attacks"
+    },
+    {
+      "timestamp": "Dec 10 11:01:16",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attacks"
+    },
+    {
+      "timestamp": "Dec 10 11:01:18",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attacks"
+    },
+    {
+      "timestamp": "Dec 10 11:01:20",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attacks"
+    },
+    {
+      "timestamp": "Dec 10 11:01:22",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attacks"
+    },
+    {
+      "timestamp": "Dec 10 11:01:24",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attacks"
+    },
+    {
+      "timestamp": "Dec 10 11:01:26",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attacks"
+    },
+    {
+      "timestamp": "Dec 10 11:01:28",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attacks"
+    },
+    {
+      "timestamp": "Dec 10 11:01:30",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attacks"
+    },
+    {
+      "timestamp": "Dec 10 11:01:32",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attacks"
+    },
+    {
+      "timestamp": "Dec 10 11:01:34",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attacks"
+    },
+    {
+      "timestamp": "Dec 10 11:01:36",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attacks"
+    },
+    {
+      "timestamp": "Dec 10 11:01:38",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attacks"
+    },
+    {
+      "timestamp": "Dec 10 11:01:40",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attacks"
+    },
+    {
+      "timestamp": "Dec 10 11:01:42",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attacks"
+    },
+    {
+      "timestamp": "Dec 10 11:01:44",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attacks"
+    },
+    {
+      "timestamp": "Dec 10 11:01:46",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP and monitor for further attacks"
+    },
+    {
+      "timestamp": "Dec 10 11:01:52",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:01:55",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:02:01",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:02:03",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:02:05",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:02:07",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:02:09",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:02:11",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:02:13",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:02:15",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:02:17",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:02:19",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:02:21",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:02:23",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:02:25",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:02:28",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:02:30",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:02:32",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:02:34",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:02:36",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:02:38",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:03:07",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP address and perform further investigation"
+    },
+    {
+      "timestamp": "Dec 10 11:03:09",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP address and perform further investigation"
+    },
+    {
+      "timestamp": "Dec 10 11:03:12",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP address and perform further investigation"
+    },
+    {
+      "timestamp": "Dec 10 11:03:14",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP address and perform further investigation"
+    },
+    {
+      "timestamp": "Dec 10 11:03:17",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP address and perform further investigation"
+    },
+    {
+      "timestamp": "Dec 10 11:03:19",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP address and perform further investigation"
+    },
+    {
+      "timestamp": "Dec 10 11:03:21",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP address and perform further investigation"
+    },
+    {
+      "timestamp": "Dec 10 11:03:24",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP address and perform further investigation"
+    },
+    {
+      "timestamp": "Dec 10 11:03:27",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP address and perform further investigation"
+    },
+    {
+      "timestamp": "Dec 10 11:03:29",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP address and perform further investigation"
+    },
+    {
+      "timestamp": "Dec 10 11:03:31",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP address and perform further investigation"
+    },
+    {
+      "timestamp": "Dec 10 11:03:33",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP address and perform further investigation"
+    },
+    {
+      "timestamp": "Dec 10 11:03:36",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP address and perform further investigation"
+    },
+    {
+      "timestamp": "Dec 10 11:03:38",
+      "source_ip": "103.99.0.122",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP address and perform further investigation"
+    },
+    {
+      "timestamp": "Dec 10 11:03:40",
+      "source_ip": "103.99.0.122",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP address and perform further investigation"
+    },
+    {
+      "timestamp": "Dec 10 11:03:41",
+      "source_ip": "103.99.0.122",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP address and perform further investigation"
+    },
+    {
+      "timestamp": "Dec 10 11:03:43",
+      "source_ip": "103.99.0.122",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP address and perform further investigation"
+    },
+    {
+      "timestamp": "Dec 10 11:03:45",
+      "source_ip": "103.99.0.122",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP address and perform further investigation"
+    },
+    {
+      "timestamp": "Dec 10 11:03:47",
+      "source_ip": "103.99.0.122",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP address and perform further investigation"
+    },
+    {
+      "timestamp": "Dec 10 11:03:49",
+      "source_ip": "103.99.0.122",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP address and perform further investigation"
+    },
+    {
+      "timestamp": "Dec 10 11:04:06",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block the IP address and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:04:08",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block the IP address and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:04:10",
+      "source_ip": "103.99.0.122",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block the IP address and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:04:11",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block the IP address and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:04:13",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block the IP address and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:04:14",
+      "source_ip": "103.99.0.122",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block the IP address and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:04:16",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block the IP address and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:04:18",
+      "source_ip": "103.99.0.122",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block the IP address and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:04:20",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block the IP address and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:04:23",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block the IP address and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:04:25",
+      "source_ip": "103.99.0.122",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block the IP address and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:04:27",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block the IP address and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:04:30",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block the IP address and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:04:32",
+      "source_ip": "103.99.0.122",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block the IP address and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:04:35",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block the IP address and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:04:37",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block the IP address and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:04:40",
+      "source_ip": "103.99.0.122",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block the IP address and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:04:41",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block the IP address and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:04:43",
+      "source_ip": "103.99.0.122",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block the IP address and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:04:45",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block the IP address and monitor for further attempts"
+    },
+    {
+      "timestamp": "Dec 10 11:04:45",
+      "source_ip": "103.99.0.122",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP"
+    },
+    {
+      "timestamp": "Dec 10 11:04:46",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP"
+    },
+    {
+      "timestamp": "Dec 10 11:04:47",
+      "source_ip": "103.99.0.122",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP"
+    },
+    {
+      "timestamp": "Dec 10 11:04:48",
+      "source_ip": "183.62.140.253",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "HIGH",
+      "recommended_action": "Block IP"
+    },
+    {
+      "timestamp": "Dec 10 11:04:49",
+      "source_ip": "103.99.0.122",
+      "destination_ip": "SERVER_IP",
+      "attack_type": "SSH Brute Force",
+      "vulnerability": "Weak Authentication",
+      "affected_service": "SSH",
+      "severity": "MEDIUM",
+      "recommended_action": "Block IP"
+    }
+  ]
+}

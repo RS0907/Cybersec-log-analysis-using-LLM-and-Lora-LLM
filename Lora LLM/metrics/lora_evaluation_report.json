@@ -1,0 +1,2811 @@
+{
+    "metrics": {
+        "total": 200,
+        "valid_json": 200,
+        "attack_type_correct": 155,
+        "severity_correct": 184,
+        "total_time": 256.67201232910156
+    },
+    "detailed_results": [
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 7820, destination bytes 15736, rate 1034.295034.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 2958, destination bytes 33044, rate 1493.341462.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service ssh, state FIN, source bytes 3728, destination bytes 5474, rate 126.656901.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service smtp, state FIN, source bytes 2198379, destination bytes 12518, rate 100.272846.",
+            "expected": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": false
+        },
+        {
+            "input": "Network traffic using unas protocol, service -, state INT, source bytes 200, destination bytes 0, rate 111111.1072.",
+            "expected": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 333333.3215.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state CON, source bytes 130, destination bytes 162, rate 3058.103916.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 2024, destination bytes 4312, rate 600.424147.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using sctp protocol, service -, state INT, source bytes 104, destination bytes 0, rate 111111.1072.",
+            "expected": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 142857.1409.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service http, state FIN, source bytes 830, destination bytes 268, rate 13.008389.",
+            "expected": {
+                "attack_type": "Reconnaissance",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using unas protocol, service -, state INT, source bytes 200, destination bytes 0, rate 1000000.003.",
+            "expected": {
+                "attack_type": "DoS",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service -, state CON, source bytes 528, destination bytes 304, rate 4043.905197.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using swipe protocol, service -, state INT, source bytes 60, destination bytes 0, rate 0.0.",
+            "expected": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state CON, source bytes 986, destination bytes 86, rate 58.561233.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 142857.1409.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 166666.6608.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 754, destination bytes 268, rate 14.92928.",
+            "expected": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 333333.3215.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service -, state INT, source bytes 1064, destination bytes 0, rate 90909.0902.",
+            "expected": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": false
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 1540, destination bytes 1644, rate 1891.551058.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service http, state FIN, source bytes 1052, destination bytes 824, rate 4188.223762.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 111111.1072.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using unas protocol, service -, state INT, source bytes 200, destination bytes 0, rate 166666.6608.",
+            "expected": {
+                "attack_type": "Analysis",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state CON, source bytes 146, destination bytes 178, rate 3099.173623.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using pipe protocol, service -, state INT, source bytes 200, destination bytes 0, rate 111111.1072.",
+            "expected": {
+                "attack_type": "Analysis",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service http, state FIN, source bytes 814, destination bytes 1186, rate 35.674565.",
+            "expected": {
+                "attack_type": "Analysis",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 564, destination bytes 354, rate 23.26826.",
+            "expected": {
+                "attack_type": "Reconnaissance",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Reconnaissance",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using gre protocol, service -, state INT, source bytes 156, destination bytes 0, rate 111111.1072.",
+            "expected": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 1528, destination bytes 642, rate 26.077733.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": false
+        },
+        {
+            "input": "Network traffic using tcp protocol, service http, state FIN, source bytes 798, destination bytes 1172, rate 39.872315.",
+            "expected": {
+                "attack_type": "DoS",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": false
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 111111.1072.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service http, state FIN, source bytes 830, destination bytes 7878, rate 32.608847.",
+            "expected": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using ipcv protocol, service -, state INT, source bytes 200, destination bytes 0, rate 333333.3215.",
+            "expected": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service http, state FIN, source bytes 822, destination bytes 1058, rate 10.927037.",
+            "expected": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 6228, destination bytes 812, rate 17.049384.",
+            "expected": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state CON, source bytes 146, destination bytes 178, rate 2887.391736.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 530, destination bytes 268, rate 14.513901.",
+            "expected": {
+                "attack_type": "Shellcode",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": false
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 125000.0003.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 1002, destination bytes 710, rate 23.629489.",
+            "expected": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 1462, destination bytes 828, rate 40.844986.",
+            "expected": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 111111.1072.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 1022, destination bytes 354, rate 26.633787.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": false
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state CON, source bytes 146, destination bytes 178, rate 2788.103975.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 744, destination bytes 268, rate 13.037764.",
+            "expected": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 2958, destination bytes 33044, rate 859.616609.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 125000.0003.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service http, state FIN, source bytes 828, destination bytes 1410, rate 81.892192.",
+            "expected": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 125000.0003.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service http, state FIN, source bytes 1362, destination bytes 3038, rate 13.185412.",
+            "expected": {
+                "attack_type": "DoS",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state CON, source bytes 146, destination bytes 178, rate 2843.601894.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 2766, destination bytes 27770, rate 1252.462675.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service -, state INT, source bytes 168, destination bytes 0, rate 111111.1072.",
+            "expected": {
+                "attack_type": "Reconnaissance",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Reconnaissance",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service -, state INT, source bytes 2972, destination bytes 0, rate 125000.0003.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": false
+        },
+        {
+            "input": "Network traffic using vines protocol, service -, state INT, source bytes 200, destination bytes 0, rate 125000.0003.",
+            "expected": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service ftp-data, state FIN, source bytes 364, destination bytes 718, rate 11.589366.",
+            "expected": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service http, state FIN, source bytes 21532, destination bytes 656008, rate 28.869553.",
+            "expected": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service ftp, state FIN, source bytes 1256, destination bytes 1596, rate 9.110066.",
+            "expected": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 994, destination bytes 830, rate 7.495851.",
+            "expected": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": false
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 125000.0003.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 90909.0902.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using ipv6-no protocol, service -, state INT, source bytes 200, destination bytes 0, rate 125000.0003.",
+            "expected": {
+                "attack_type": "Backdoor",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "DoS",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 2566, destination bytes 354, rate 15.057094.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": false
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 125000.0003.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 333333.3215.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state CON, source bytes 146, destination bytes 178, rate 2702.702815.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 111111.1072.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using arp protocol, service -, state INT, source bytes 46, destination bytes 0, rate 0.0.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service http, state FIN, source bytes 1684, destination bytes 10168, rate 30.180039.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 1540, destination bytes 1644, rate 16.642266.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service http, state FIN, source bytes 798, destination bytes 1240, rate 16.996017.",
+            "expected": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service http, state FIN, source bytes 912, destination bytes 268, rate 75.732715.",
+            "expected": {
+                "attack_type": "Reconnaissance",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 333333.3215.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service http, state FIN, source bytes 1376, destination bytes 2520, rate 23.312008.",
+            "expected": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": false
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 5666, destination bytes 268, rate 41.589808.",
+            "expected": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": false
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 534, destination bytes 354, rate 22.867782.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 1000000.003.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service -, state INT, source bytes 574, destination bytes 0, rate 100000.0025.",
+            "expected": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using unas protocol, service -, state INT, source bytes 200, destination bytes 0, rate 100000.0025.",
+            "expected": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service smtp, state FIN, source bytes 221491, destination bytes 2862, rate 106.20048.",
+            "expected": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state CON, source bytes 130, destination bytes 162, rate 2690.582979.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using sctp protocol, service -, state INT, source bytes 78, destination bytes 0, rate 142857.1409.",
+            "expected": {
+                "attack_type": "DoS",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service smtp, state FIN, source bytes 186585, destination bytes 2658, rate 129.957006.",
+            "expected": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 125000.0003.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 250000.0006.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service -, state INT, source bytes 168, destination bytes 0, rate 111111.1072.",
+            "expected": {
+                "attack_type": "Reconnaissance",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Reconnaissance",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service -, state INT, source bytes 168, destination bytes 0, rate 200000.0051.",
+            "expected": {
+                "attack_type": "Reconnaissance",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Reconnaissance",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using unas protocol, service -, state INT, source bytes 200, destination bytes 0, rate 250000.0006.",
+            "expected": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 608, destination bytes 646, rate 28.472611.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 142857.1409.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dhcp, state CON, source bytes 2304, destination bytes 2304, rate 107.963044.",
+            "expected": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": false
+        },
+        {
+            "input": "Network traffic using skip protocol, service -, state INT, source bytes 200, destination bytes 0, rate 200000.0051.",
+            "expected": {
+                "attack_type": "DoS",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service http, state FIN, source bytes 1020, destination bytes 268, rate 14.788801.",
+            "expected": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service ssh, state FIN, source bytes 3728, destination bytes 5474, rate 221.911093.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state CON, source bytes 146, destination bytes 178, rate 2683.363113.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 564, destination bytes 354, rate 7.021314.",
+            "expected": {
+                "attack_type": "Reconnaissance",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Reconnaissance",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 333333.3215.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 111111.1072.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 111111.1072.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service -, state INT, source bytes 503, destination bytes 0, rate 9259.259244.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": false
+        },
+        {
+            "input": "Network traffic using tcp protocol, service smtp, state FIN, source bytes 63447, destination bytes 2316, rate 31.21423.",
+            "expected": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using unas protocol, service -, state INT, source bytes 200, destination bytes 0, rate 111111.1072.",
+            "expected": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 4272, destination bytes 2768, rate 215.222154.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 111111.1072.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 200000.0051.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using iplt protocol, service -, state INT, source bytes 200, destination bytes 0, rate 111111.1072.",
+            "expected": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service smtp, state FIN, source bytes 37808, destination bytes 3380, rate 203.950199.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service http, state FIN, source bytes 1046, destination bytes 268, rate 36.960834.",
+            "expected": {
+                "attack_type": "DoS",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 28662, destination bytes 850, rate 35.024781.",
+            "expected": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 125000.0003.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service http, state FIN, source bytes 1040, destination bytes 824, rate 809.716585.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using etherip protocol, service -, state INT, source bytes 200, destination bytes 0, rate 1000000.003.",
+            "expected": {
+                "attack_type": "Reconnaissance",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 4160, destination bytes 2872, rate 187.453141.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using unas protocol, service -, state INT, source bytes 200, destination bytes 0, rate 111111.1072.",
+            "expected": {
+                "attack_type": "DoS",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using unas protocol, service -, state INT, source bytes 200, destination bytes 0, rate 250000.0006.",
+            "expected": {
+                "attack_type": "DoS",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 2334, destination bytes 13500, rate 4967.118952.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 564, destination bytes 354, rate 8.538149.",
+            "expected": {
+                "attack_type": "Reconnaissance",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Reconnaissance",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using fc protocol, service -, state INT, source bytes 200, destination bytes 0, rate 125000.0003.",
+            "expected": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 994, destination bytes 752, rate 13.546629.",
+            "expected": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 333333.3215.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using unas protocol, service -, state INT, source bytes 200, destination bytes 0, rate 111111.1072.",
+            "expected": {
+                "attack_type": "DoS",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 1498, destination bytes 780, rate 25.657566.",
+            "expected": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 125000.0003.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service smtp, state FIN, source bytes 31359, destination bytes 2050, rate 18.506191.",
+            "expected": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service pop3, state FIN, source bytes 1144, destination bytes 38084, rate 88.558497.",
+            "expected": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 333333.3215.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 1000000.003.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using unas protocol, service -, state INT, source bytes 200, destination bytes 0, rate 250000.0006.",
+            "expected": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using ospf protocol, service -, state INT, source bytes 1040, destination bytes 0, rate 36.72122.",
+            "expected": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 1064, destination bytes 2260, rate 5540.8333.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service http, state FIN, source bytes 1052, destination bytes 824, rate 4169.732567.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 1336, destination bytes 85814, rate 69.751821.",
+            "expected": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 142857.1409.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using cpnx protocol, service -, state INT, source bytes 200, destination bytes 0, rate 111111.1072.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 111111.1072.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using arp protocol, service -, state INT, source bytes 46, destination bytes 0, rate 0.0.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 2030, destination bytes 756, rate 25.42102.",
+            "expected": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 125000.0003.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service ftp, state FIN, source bytes 2934, destination bytes 3742, rate 123.573749.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 3614, destination bytes 45696, rate 3413.932181.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service http, state FIN, source bytes 808, destination bytes 6808, rate 105.215693.",
+            "expected": {
+                "attack_type": "DoS",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 2542, destination bytes 23508, rate 6683.168269.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service http, state FIN, source bytes 1684, destination bytes 10168, rate 29.849223.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 111111.1072.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 111111.1072.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 1002, destination bytes 700, rate 27.974416.",
+            "expected": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using secure-vmtp protocol, service -, state INT, source bytes 200, destination bytes 0, rate 111111.1072.",
+            "expected": {
+                "attack_type": "Backdoor",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 1138, destination bytes 770, rate 20.279926.",
+            "expected": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 111111.1072.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using unas protocol, service -, state INT, source bytes 200, destination bytes 0, rate 250000.0006.",
+            "expected": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service http, state FIN, source bytes 68195, destination bytes 698, rate 40.654131.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": false
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 142857.1409.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 1470, destination bytes 1728, rate 7273.48318.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service -, state INT, source bytes 2106, destination bytes 0, rate 100000.0025.",
+            "expected": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 111111.1072.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using unas protocol, service -, state INT, source bytes 200, destination bytes 0, rate 111111.1072.",
+            "expected": {
+                "attack_type": "DoS",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state CON, source bytes 986, destination bytes 86, rate 42.086276.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 333333.3215.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using sep protocol, service -, state INT, source bytes 200, destination bytes 0, rate 333333.3215.",
+            "expected": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 1540, destination bytes 1644, rate 1797.581473.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 564, destination bytes 354, rate 27.207314.",
+            "expected": {
+                "attack_type": "Reconnaissance",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Reconnaissance",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service http, state FIN, source bytes 1580, destination bytes 10168, rate 28.855263.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 111111.1072.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service -, state INT, source bytes 503, destination bytes 0, rate 9259.259244.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": false
+        },
+        {
+            "input": "Network traffic using tcp protocol, service http, state FIN, source bytes 778, destination bytes 4074, rate 52.723736.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 4014, destination bytes 59460, rate 1142.67605.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 333333.3215.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service -, state INT, source bytes 1064, destination bytes 0, rate 250000.0006.",
+            "expected": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service http, state FIN, source bytes 838, destination bytes 1356, rate 64.213464.",
+            "expected": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using mux protocol, service -, state INT, source bytes 400, destination bytes 0, rate 2.281299.",
+            "expected": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 1958, destination bytes 2308, rate 7346.938968.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 111111.1072.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service -, state INT, source bytes 168, destination bytes 0, rate 111111.1072.",
+            "expected": {
+                "attack_type": "Reconnaissance",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Reconnaissance",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service -, state INT, source bytes 78, destination bytes 0, rate 111111.1072.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": false
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 200000.0051.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 111111.1072.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 125000.0003.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 100000.0025.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service http, state FIN, source bytes 882, destination bytes 2160, rate 9.582979.",
+            "expected": {
+                "attack_type": "DoS",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 2054, destination bytes 2478, rate 3727.016668.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service http, state FIN, source bytes 828, destination bytes 1082, rate 23.425884.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state CON, source bytes 986, destination bytes 86, rate 44.61156.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 4862, destination bytes 75600, rate 1158.502294.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 125000.0003.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 200000.0051.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 2054, destination bytes 2478, rate 8384.572197.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service -, state INT, source bytes 104, destination bytes 0, rate 250000.0006.",
+            "expected": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service http, state FIN, source bytes 1684, destination bytes 10168, rate 28.127252.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 4840, destination bytes 3080, rate 34.214116.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 100000.0025.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using arp protocol, service -, state INT, source bytes 46, destination bytes 0, rate 0.0.",
+            "expected": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "predicted": {
+                "attack_type": "Normal",
+                "severity": "LOW"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service -, state FIN, source bytes 588, destination bytes 268, rate 17.445816.",
+            "expected": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Fuzzers",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service http, state FIN, source bytes 1478, destination bytes 1174, rate 0.417137.",
+            "expected": {
+                "attack_type": "Analysis",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service http, state FIN, source bytes 1184, destination bytes 354, rate 31.165954.",
+            "expected": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service dns, state INT, source bytes 114, destination bytes 0, rate 111111.1072.",
+            "expected": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Generic",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using unas protocol, service -, state INT, source bytes 200, destination bytes 0, rate 111111.1072.",
+            "expected": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service http, state FIN, source bytes 1702, destination bytes 268, rate 29.038423.",
+            "expected": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using unas protocol, service -, state INT, source bytes 200, destination bytes 0, rate 111111.1072.",
+            "expected": {
+                "attack_type": "DoS",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": false,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using tcp protocol, service http, state FIN, source bytes 852, destination bytes 1590, rate 78.528469.",
+            "expected": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Exploits",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        },
+        {
+            "input": "Network traffic using udp protocol, service -, state INT, source bytes 168, destination bytes 0, rate 62500.00016.",
+            "expected": {
+                "attack_type": "Reconnaissance",
+                "severity": "HIGH"
+            },
+            "predicted": {
+                "attack_type": "Reconnaissance",
+                "severity": "HIGH"
+            },
+            "is_valid_json": true,
+            "attack_correct": true,
+            "severity_correct": true
+        }
+    ]
+}
