@@ -1,0 +1,1380 @@
+TABLE OF CONTENTS
+ExecutiveSummary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ii
+ListofTables . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . iii
+ListofFigures . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . iv
+ListofAbbreviations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . v
+ListofSymbols . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . vi
+1 INTRODUCTION 1
+1.1 Background . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+1.1.1 SecurityLogAnalysisChallenges . . . . . . . . . . . . . . . . 2
+1.1.2 ImportanceofMachineLearningandLLMs . . . . . . . . . . . 2
+1.2 Motivation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+1.3 ScopeoftheProject . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+2 PROJECTDESCRIPTIONANDGOALS 4
+2.1 LiteratureReview . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+2.2 ResearchGap . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+2.3 Objectives . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+2.4 ProblemStatement . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+2.5 ProjectPlan . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+3 TECHNICALSPECIFICATION 14
+3.1 Requirements . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+3.1.1 FunctionalRequirements . . . . . . . . . . . . . . . . . . . . . 14
+3.1.2 Non-FunctionalRequirements . . . . . . . . . . . . . . . . . . 14
+3.2 FeasibilityStudy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+3.3 SystemSpecification . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+3.3.1 HardwareSpecification . . . . . . . . . . . . . . . . . . . . . . 16
+3.3.2 SoftwareSpecification . . . . . . . . . . . . . . . . . . . . . . 16
+4 SYSTEMDESIGN 17
+4.1 SystemArchitecture . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+4.1.1 LogCollectionandDataIngestion . . . . . . . . . . . . . . . . 17
+4.1.2 PreprocessingandNormalization . . . . . . . . . . . . . . . . 18
+4.1.3 MachineLearningModelPipeline . . . . . . . . . . . . . . . . 18
+4.1.4 Prompt-OnlyLLMPipeline . . . . . . . . . . . . . . . . . . . 19
+4.1.5 LoRAFine-TunedLLMPipeline . . . . . . . . . . . . . . . . 19
+4.1.6 EvaluationandComparisonLayer . . . . . . . . . . . . . . . . 20
+4.1.7 FinalResultsandAnalysis . . . . . . . . . . . . . . . . . . . . 20
+4.2 DetailedDesign . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+4.2.1 DataIngestionLayer . . . . . . . . . . . . . . . . . . . . . . . 21
+4.2.2 ProcessingandManagementHub . . . . . . . . . . . . . . . . 22
+4.2.3 ClassicalMachineLearningPipeline . . . . . . . . . . . . . . . 22
+4.2.4 LLM-BasedPipeline . . . . . . . . . . . . . . . . . . . . . . . 23
+4.2.5 ComparativeEvaluationLayer . . . . . . . . . . . . . . . . . . 24
+4.2.6 FinalOutputandAnalysis . . . . . . . . . . . . . . . . . . . . 24
+5 METHODOLOGYANDTESTING 25
+5.1 Methodology . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+5.1.1 DatasetDescription . . . . . . . . . . . . . . . . . . . . . . . . 25
+5.1.2 DataPreprocessing . . . . . . . . . . . . . . . . . . . . . . . . 26
+5.1.3 MachineLearningModels . . . . . . . . . . . . . . . . . . . . 26
+5.1.4 LLMInputRepresentation . . . . . . . . . . . . . . . . . . . . 26
+5.1.5 Zero-ShotLLMEvaluation . . . . . . . . . . . . . . . . . . . . 27
+5.1.6 LoRAFine-Tuning . . . . . . . . . . . . . . . . . . . . . . . . 27
+5.1.7 EvaluationandComparison . . . . . . . . . . . . . . . . . . . 27
+5.1.8 SystemOverview . . . . . . . . . . . . . . . . . . . . . . . . . 28
+6 ProjectImplementation 29
+6.0.1 A.DataSelectionandPreprocessing . . . . . . . . . . . . . . . 29
+6.0.2 B.MachineLearningModelImplementation . . . . . . . . . . 31
+6.0.3 C.Zero-ShotLLMEvaluation . . . . . . . . . . . . . . . . . . 32
+6.0.4 D.QLoRAFine-TuningandModelSelection . . . . . . . . . . 32
+6.0.5 E.EvaluationandDashboardOrchestration . . . . . . . . . . . 33
+7 ResultsandDiscussion 35
+7.1 PerformanceEvaluationofMachineLearningModels . . . . . . . . . . 36
+7.1.1 RandomForestClassifier . . . . . . . . . . . . . . . . . . . . . 36
+7.1.2 XGBoostClassifier . . . . . . . . . . . . . . . . . . . . . . . . 37
+7.2 EvaluationofUnsupervisedAnomalyDetection . . . . . . . . . . . . . 38
+7.2.1 IsolationForestPerformance . . . . . . . . . . . . . . . . . . . 38
+7.3 FeatureImportanceandInterpretability . . . . . . . . . . . . . . . . . 39
+7.4 LLMandQLoRA-BasedThreatDetectionResults . . . . . . . . . . . 40
+7.4.1 Zero-ShotBaselinePerformance . . . . . . . . . . . . . . . . . 40
+7.4.2 ImpactofQLoRAFine-Tuning . . . . . . . . . . . . . . . . . 40
+7.4.3 ComparativeAnalysis . . . . . . . . . . . . . . . . . . . . . . 41
+7.4.4 ComputationalFeasibility . . . . . . . . . . . . . . . . . . . . 42
+7.5 Discussion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 42
+8 CONCLUSIONANDFURTHERENHANCEMENTS 43
+8.1 Conclusion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43
+8.2 FurtherEnhancements . . . . . . . . . . . . . . . . . . . . . . . . . . 44
+8.2.1 Real-TimeLogMonitoring . . . . . . . . . . . . . . . . . . . . 44
+8.2.2 IntegrationwithSecurityTools . . . . . . . . . . . . . . . . . . 44
+8.2.3 AdvancedLLMFine-Tuning . . . . . . . . . . . . . . . . . . . 45
+8.2.4 ExpandedDatasetSupport . . . . . . . . . . . . . . . . . . . . 45
+8.2.5 ExplainableAIEnhancements . . . . . . . . . . . . . . . . . . 45
+8.2.6 DeploymentandOptimization . . . . . . . . . . . . . . . . . . 45
+8.3 FinalRemark . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 46
+References . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 47
+i
+EXECUTIVE SUMMARY
+EXECUTIVESUMMARY
+Asmoderncyberattackshavebecomemoresophisticated,theinabilityofstaticmethods
+ofdetectingcyberthreatshasbecomeprominent. Tocombatthis,anewframeworkwill
+be developed that utilizes the strengths of both traditional machine learning and large
+languagemodelstodetectcyberthreatsinreal-time.
+The UNSW-NB15 dataset will be used for the framework that contains normal and
+cyberattack traffic. Preprocessing will occur for the dataset prior to training both ma-
+chine learning and large language models. For machine learning models, Random
+Forest, XGBoost, and Isolation Forest will be trained to detect cyberattacks. For the
+large language models, features for cyberattacks will be converted to natural language
+promptsthatwillbegiventomodelstodeterminetheseverityofthecyberattack.
+The results of the machine learning models showed that the XGBoost model per-
+formedthebestwithanaccuracyof90.56
+For the large language models, three models will be tested: Phi-4 Mini, Llama-
+3.2 3B and Gemma-2 2B in zero-shot and fine-tuned models. The zero-shot models
+exhibitedlimitedunderstandingofcyberattackswiththeseverityclassificationsranging
+from32
+ii
+LIST OF TABLES
+2.1 LiteratureReviewSummary . . . . . . . . . . . . . . . . . . . . . . . 5
+iii
+LIST OF FIGURES
+4.1 CybersecurityThreatDetectionArchitecture . . . . . . . . . . . . . . . 17
+4.2 CybersecurityThreatDetectionArchitecture . . . . . . . . . . . . . . . 21
+7.1 ComparisonofPerformanceMetricsAcrossMachineLearningModels 36
+7.2 AccuracyComparisonofMachineLearningModels . . . . . . . . . . . 36
+7.3 ROCCurveoftheRandomForestClassifier . . . . . . . . . . . . . . . 37
+7.4 ROCCurveoftheXGBoostClassifier . . . . . . . . . . . . . . . . . . 38
+7.5 IsolationForestAnomalyScoreDistribution . . . . . . . . . . . . . . . 38
+7.6 TopFeatureImportancesinRandomForest . . . . . . . . . . . . . . . 39
+7.7 TopFeatureImportancesinXGBoost . . . . . . . . . . . . . . . . . . 39
+7.8 LoRAFine-TuningProgression(Cross-EntropyLoss) . . . . . . . . . . 41
+7.9 ComparisonofZero-ShotandQLoRA-TunedLLMSeverityAccuracy . 41
+iv
+LIST OF ABBREVIATIONS
+AI ArtificialIntelligence
+ML MachineLearning
+v
+SYMBOLS AND NOTATIONS
+α Weightparameter
+β Biasparameter
+∆ Changeinvalue
+vi
+CHAPTER 1
+INTRODUCTION
+1.1 BACKGROUND
+In the current digital age, organizations have become reliant on networked systems,
+cloud platforms, and distributed infrastructures in their day-to-day operations. Huge
+volumesofsecuritylogsareproducedbyfirewalls,intrusiondetectionsystems,servers,
+and applications each second by these systems. These logs will carry valuable data re-
+gardingactivitiesofthesystems,userusage, andpotentialsecurityrisks. Nevertheless,
+the process of going through such huge amount of data manually is very hard, time
+consumingandinmostcases,itresultsininaccuracies.
+Conventional security monitoring platforms are primarily based on pre-established
+rules and well-known attack signatures to detect threats. Although these systems are
+effectiveincaseofknownattacks,theyusuallyfailincaseofnewordevelopingattack
+patterns. This limitation has resulted in the popularization of the use of the Machine
+Learning(ML)techniquesintheautomaticidentificationofabnormalpatternsandma-
+liciousactivitiesinthelogdata.
+Most machine learning models are black boxes, even though they can enhance the
+detection accuracy. They give forecasts, but they do not make it clear why this or
+that log or activity was considered suspicious. This complicates the trust that security
+analysts have to the system and may slow down the process of making decisions in a
+criticalincident.
+WiththeblisteringdevelopmentofArtificialIntelligence(AI)andparticularlyLarge
+LanguageModels(LLMs),ithasbecomepossibletomakethemmorecomprehensible.
+LLM is able to produce human readable descriptions of identified threats, enabling
+analysts to comprehend the problem and respond more quickly. A smarter and more
+feasible cybersecurity solution can be developed by combining the reasoning and ex-
+planationaspectsofLLMswiththedetectionabilityofmachinelearning.
+1
+1.1.1 SecurityLogAnalysisChallenges
+Security logs are often unstructured, voluminous, and generated from a variety of
+heterogeneous sources. This makes preprocessing and normalization difficult. In addi-
+tion, distinguishing between normal and malicious behavior requires identifying subtle
+patternsthatareoftenhardtodetectusingconventionalmethods.
+1.1.2 ImportanceofMachineLearningandLLMs
+Machine learning models such as Random Forest and XGBoost can effectively clas-
+sify log entries based on learned patterns. However, these models often lack inter-
+pretability. LLMs, on the other hand, are capable of understanding context and gen-
+erating natural language explanations. By integrating both approaches, the system can
+not only detect threats but also explain them in a way that is understandable to human
+analysts.
+1.2 MOTIVATION
+This project is motivated by the increasing complexity of cyber threats and the limita-
+tions of current security analysis techniques. As organizations continuously generate
+massive amounts of log data, the need for intelligent systems capable of both detecting
+andexplainingthreatsisgrowingrapidly.
+• Problem Significance: Cyber attacks are becoming increasingly sophisticated,
+requiringmoreadvancedmethodstoidentifythem.
+• Practical Motivation: Security analysts require faster and more interpretable
+insightsforeffectiveresponse.
+• Academic Motivation: The application of ML and LLMs in cybersecurity is an
+emergingfieldofresearch.
+• Technical Interest: Combining structured ML models with unstructured lan-
+guagemodelsistechnicallyinteresting.
+• Aspect of Innovation: Adding an explanation layer with LLMs makes the sys-
+temmoretransparentanduser-friendly.
+2
+1.3 SCOPEOFTHEPROJECT
+This project aims to design and evaluate a hybrid cybersecurity log analysis system
+usingmachinelearning-baseddetectionandLLM-basedexplanations.
+• FunctionalScope:
+– Processingandanalyzingsecuritylogdatasets.
+– Binaryclassificationoflogentries(attackvsnormal).
+– Generatinghuman-readableexplanationsofdetectedevents.
+• Non-FunctionalScope:
+– Ensuringhighaccuracyandlowfalsepositives.
+– Improvingusabilityandinterpretability.
+– Supportingprocessingoflarge-scaledata.
+• TechnicalScope:
+– ImplementationusingPython,Scikit-learn,andXGBoost.
+– Explanationgenerationusingpre-trainedorfine-tunedLLMs.
+– Evaluationusingstandardperformancemetrics.
+• ProjectBoundaries:
+– Thesystemcurrentlysupportsonlyofflineanalysisofhistoricaldata.
+– Real-timedeploymentandautomatedresponsemechanismsarenotincluded.
+– Assumestheavailabilityoflabeleddataforsupervisedlearning.
+– Doesnotaddressadvancedadversarialattackscenarios.
+3
+CHAPTER 2
+PROJECT DESCRIPTION AND GOALS
+2.1 LITERATUREREVIEW
+Analysis of cybersecurity logs has gained increased significance with the fast-paced
+development of networked systems and digital infrastructures. Conventional intrusion
+detection systems were rule-based systems, which worked well to find out known at-
+tacksbutcouldnotidentifynewandemergingthreats. Thisshortcomingresultedinthe
+useofmachinelearning(ML)anddeeplearning(DL)methods.
+Machinelearningmodels(RandomForest,SupportVectorMachinesandXGBoost)
+have been shown to perform quite well in intrusion detection with supervision. Never-
+theless,thesemodelsareveryreliantonlabeleddataandcannotbeinterpreted.
+Unsupervisedmethods,suchasIsolationForestandAutoencoders,areabletoiden-
+tifyunknownattacks,buttendtohavelargefalsepositiverates.
+The latest developments have brought Large Language Models (LLMs) to cyberse-
+curity. LLMs are able to process logs and provide human-readable explanations. Nev-
+ertheless,adaptationmightberequiredtoensurethatpre-trainedLLMscanbeeffective
+indomain-specifictaskslikeanalyzingcybersecuritylogs.
+To manage this, recent studies consider parameter-efficient methods of fine-tuning
+likeLoRA(Low-RankAdaptation),thatenablesadaptationofLLMstodomain-specific
+datausingalowamountofcomputation. Thisstrategyenhancesperformanceandrele-
+vancewithouthavingtore-traintheentiremodels.
+ThecomparativeanalysisofexistingstudiesissummarizedinTable2.1.
+4
+Table2.1: LiteratureReviewSummary
+S/N Author(s), StudyFocus Methodology KeyFindings Contribution
+Year
+1 Palma et al. LLMs for log Comparative LLMs out- Strong evidence
+(2025) et al. analysis study performed for LLM-based
+(2025i) XGBoost/- detection
+LightGBM
+and generated
+explanations
+2 Karlsen et al. Benchmarking Fine-tuning DistilRoBERTa Validates Trans-
+(2023) et al. LLMs 60LMs achieved former effective-
+(2023d) F1=0.998 ness
+3 Costa Silva et Intrusion log Few-shot Detected Supports
+al. (2025) analysis GPT-4o-mini anomalies zero/few-shot
+etal.(2025a) without train- feasibility
+ing
+4 Daniel et al. NIDSrulelabel- Prompting + LLMsscalable Supports hybrid
+(2025) et al. ing ML forrarelabels ML+LLM
+(2025b)
+5 Ali & HuntGPT RF + Actionable in- Supports LLM
+Kostakos SHAP/LIME trusionalerts explanations
+(2023)? +GPT
+6 Al-hammouri Zero-day IoT Signature Accuracy Supports hybrid
+et al. (2025) threats IDS+GPT-2 +6.3%, fewer IDS
+hammouri et falsepositives
+al.(2025)
+7 Kheddar IDSsurvey Literature re- Identifies Positions current
+(2024) Khed- view interpretabil- work
+dar(2024) ity/scalability
+issues
+5
+S/N Author(s), StudyFocus Methodology KeyFindings Contribution
+Year
+8 Houssel et al. Explainable GPT- Good expla- LLM as comple-
+(2024) et al. NIDS 4/Llama3 nations, weak ment
+(2024b) +RAG detection
+9 Entezami et Hybrid anomaly LLM + CN- 95% accuracy, Strong hybrid ev-
+al. (2025) detection N/LSTM fewer false idence
+etal.(2025c) alarms
+10 Ferrag et al. SecurityBERT Lightweight 98.2% ac- Efficient LLM-
+(2023) et al. Transformer curacy, fast styleIDS
+(2023c) inference
+11 Yang et al. LLMsinNIDS Review/framewoLrLkM as DefinesLLMrole
+(2025) et al. processor/ex-
+(2025j) plainer/con-
+troller
+12 Nwafor et al. IoTIDS Fine-tuning+ Embeddings Alternative LLM
+(2024) et al. embeddings competitive usage
+(2024e)
+13 Rajathi & HybridIDS Stacking 99–99.9% ac- Strong non-LLM
+Rukmani models curacy baseline
+(2025) Ra-
+jathi and
+Rukmani
+(2025)
+14 Jera´bek et al. Explainable Detector + Better sit- LLMforexplana-
+(2025) et al. anomaly detec- LLM uational tion
+(2025f) tion awareness
+15 Elouardi et al. Hybrid CN- Survey Reviews open Context for IoT
+? N/LLMIDS problems IDS
+16 Mahmood et IoT security IF + RF + Human- Supports seman-
+al. et al. framework GPT-4omini readable risk ticexplanations
+(2025h) scoring
+6
+S/N Author(s), StudyFocus Methodology KeyFindings Contribution
+Year
+17 Sajid et al. Hybrid ML/DL XGBoost ¿97% accu- Strongbaseline
+(2024) et al. IDS + CNN + racy
+(2024g) LSTM
+18 Xu et al. LLM4Security Systematic Rapid growth Broader research
+(2024)? review in LLM secu- context
+ritytasks
+19 Houssel et al. eX-NIDS Prompt aug- ¿20% better Supports prompt
+(2025)? menter + explanations augmentation
+LLM
+20 Kumar et al. AE–ELMIDS Autoencoder 98.52% accu- High-performing
+(2025) et al. +ELM racy non-LLM refer-
+(2025g) ence
+21 Bente´jacetal. Comparative Empirical XGBoost Justifies XG-
+(2019) et al. analysis of comparison ranked second Boost as a strong
+(2019a) boosting algo- in accuracy baseline
+rithms andspeed
+22 Ali et al. Review of Narrative re- XGBoost Supports XG-
+(2023)? XGBoost appli- view is accurate, Boostselection
+cations scalable,
+and widely
+applicable
+23 Niazkar et al. XGBoost in Systematic XGBoost Shows robustness
+(2024) et al. scientific pre- review or hybrids acrossdomains
+(2024d) diction achieved best
+performance
+in74%studies
+7
+S/N Author(s), StudyFocus Methodology KeyFindings Contribution
+Year
+24 Chang et al. Credit risk pre- XGBoost Outperformed Supports han-
+(2018) et al. diction + under- Logistic Re- dling imbalanced
+(2018a) sampling gression, data
+SOM, and
+SVM
+25 Imani et al. RF vs XGBoost Comparative Tuned XG- Validates
+(2025) et al. underimbalance study Boost + imbalance-
+(2025e) SMOTE handlingstrategy
+achieved
+highestF1
+26 Budholiya et Heartdiseasedi- Optimized Achieved Shows im-
+al. (2020) agnosis XGBoost 91.8% accu- portance of
+etal.(2020) racy hyperparameter
+tuning
+27 Sheridanetal. QSAR predic- XGBoost vs XGBoost Supports
+(2016) et al. tion RF vs Deep better than RF efficiency-
+(2016) Learning and close to performance
+deepnets tradeoff
+28 Mitchell & GPU accelera- CUDA-based Achieved Supports large-
+Frank (2017) tionofXGBoost optimization 3–6× speedup scaledeployment
+Mitchell and overCPU
+Frank(2017)
+29 Ben Jabeur et Bankruptcy pre- FS-XGBoost AUC Supports feature
+al. (2022) diction 0.866–0.958 selection integra-
+etal.(2022a) tion
+30 Asselman et Student per- Ensemble XGBoost Demonstrates
+al. (2021) formance comparison achieved high- generalization
+etal.(2021) prediction estaccuracy
+8
+S/N Author(s), StudyFocus Methodology KeyFindings Contribution
+Year
+31 Salman et al. Random Forest Conceptual RF robust Theoretical basis
+(2024) et al. overview review to miss- forRFbaseline
+(2024h) ing values,
+imbalance,
+overfitting
+32 Speiser et al. RF feature se- Empirical Improves Guides feature
+(2019) et al. lection comparison error/com- selectionstrategy
+(2019c) putation
+trade-off
+33 Pious et al. RF prediction Survey RF improves Highlights
+(2024) et al. accuracy review prediction strengths/limita-
+(2024f) but inter- tions
+pretability
+challenge
+34 Jaiswal & RF for high- Empirical Handles fea- Supports RF for
+Samikannu dimensional comparison ture selection cybersecurity
+(2017) data and noise data
+Jaiswal and effectively
+Samikannu
+(2017)
+35 Ignatenko et Improved RF ModifiedRF Improved ac- Shows RF can be
+al. (2024) with entropy curacy signifi- enhanced
+etal.(2024c) gains cantly
+36 Couronne´ et RF vs Logistic Large-scale RF out- Establishes RF
+al. (2018) Regression benchmark performed baseline
+etal.(2018b) Logistic Re-
+gression on
+69%datasets
+9
+S/N Author(s), StudyFocus Methodology KeyFindings Contribution
+Year
+37 Arora & Kaur RF for credit Bolasso+RF Best AUC and SupportsRF+FS
+(2020) Arora risk accuracy approach
+and Kaur
+(2020)
+38 Mylonasetal. ExplainableRF LionForests Effective local Comparison
+(2022) et al. method explanations point for LLM
+(2022c) explanations
+39 Rachwał et al. Improved IF SHAP-based Improvedmet- Supports explain-
+(2023) et al. withSHAP weighting rics and inter- ableIF
+(2023e) pretability
+40 Chabchoub et IF parameter Parameter Faster than IF Guidestuning
+al. (2022) study tuning with similar
+etal.(2022b) accuracy
+41 Xu et al. Deep Isolation Random neu- Improved over Supports deep-
+(2022)? Forest ral represen- standardIF /hybridbaselines
+tations
+42 Xiang et al. OptIForest Multi-fork Better de- Motivates opti-
+(2023) et al. trees tection and mizedIF
+(2023f) efficiency
+43 Sri Lakshmi IF in SDN secu- IF on SDN Showed lim- Justifies hybrid
+etal. (2024)? rity traffic itations in methods
+precision/re-
+call/F1
+44 Chen et al. BS-iForest Box-plot Improved Supports robust-
+(2023)? sampling AUC ness improve-
+ments
+45 Cheng et al. IF + LOF en- Two-layer Better detec- Supports ensem-
+(2019) et al. semble anomaly tion, reduced ble anomaly de-
+(2019b) detection complexity tection
+10
+S/N Author(s), StudyFocus Methodology KeyFindings Contribution
+Year
+46 Abbassi et al. Real-time IF Spark/Kafka Achieved 99% Supports real-
+(2024) et al. frauddetection architecture accuracy timefeasibility
+(2024a)
+47 Moustafa & UNSW-NB15 Dataset gen- Created real- Primary dataset
+Slay (2015) datasetcreation eration istic intrusion source
+Moustafa and dataset
+Slay(2015)
+48 Moustafa & UNSW-NB15 Statistical UNSW more Justifies choosing
+Slay (2016) vs KDD99 analysis realistic and UNSW
+Moustafa and comparison balanced
+Slay(2016)
+49 Moustafa et Big data analyt- Statistical Effective Supports ML-
+al. (2017) icsforIDS decision- anomaly based IDS
+etal.(2017) making detection methodology
+50 Zhou et al. LIMA: Less Is Supervised High-quality Supports efficient
+(2023)? More for Align- instruction small tuning LoRAfine-tuning
+ment tuning datasufficient
+2.2 RESEARCHGAP
+Despiteadvancements,severalchallengesremain:
+• LackofinterpretabilityinMLandDLmodels
+• LimiteddomainadaptationofLLMsforcybersecuritytasks
+• Dependenceonlargelabeleddatasets
+• Highfalsepositiveratesinanomalydetection
+• Poorgeneralizationacrossdatasets
+• Limiteduseofparameter-efficientfine-tuningtechniquessuchasLoRA
+11
+2.3 OBJECTIVES
+• ToanalyzetheUNSW-NB15datasetforintrusiondetection
+• To implement supervised machine learning models such as Random Forest and
+XGBoost
+• Toapplyunsupervisedanomalydetectiontechniques
+• Toevaluatemodelsusingaccuracy,precision,recall,F1-score,andROC-AUC
+• TointegrateLargeLanguageModelsforexplanationgeneration
+• Tofine-tunetwoLLMsusingLoRAfordomain-specificcybersecuritytasks
+• TocompareperformancebetweenbaseLLMsandLoRA-tunedmodels
+• Toimproveinterpretabilityandusabilityofcybersecuritysystems
+2.4 PROBLEMSTATEMENT
+The current cybersecurity systems produce large amounts of log data, and it is not fea-
+sible to analyze it manually. Although machine learning models can identify malicious
+activity, they are not interpretable. Pre-trained LLMs are not domain-specific but have
+anexplanation.
+The purpose of this project is to create a hybrid system with the UNSW-NB15
+dataset, in which machine learning models carry out intrusion detection, and LLMs
+provide explanations. Besides, two LLMs will be fine-tuned using LoRA, to enhance
+theirperformanceondatarelatedtocybersecurity,allowingamorepreciseandcontext-
+sensitiveanalysis.
+2.5 PROJECTPLAN
+• Phase1: Datasetunderstanding(UNSW-NB15)
+• Phase2: Datapreprocessingandfeatureengineering
+• Phase3: MLmodelimplementation(RF,XGBoost,IsolationForest)
+12
+• Phase4: Modelevaluationandcomparison
+• Phase5: IntegrationofLLMsforexplanation
+• Phase6: LoRAfine-tuningofLLMsonlogdata
+• Phase7: Comparativeanalysis(basevsfine-tunedLLMs)
+• Phase8: Finalanalysisanddocumentation
+13
+CHAPTER 3
+TECHNICAL SPECIFICATION
+3.1 REQUIREMENTS
+3.1.1 FunctionalRequirements
+• ThesystemwillconsumeandprocesstheUNSW-NB15cybersecuritydataset.
+• The system will preprocess raw network traffic data through cleaning, encoding,
+andnormalization.
+• ThesystemwilladoptsupervisedmachinelearningmodelssuchasRandomFor-
+estandXGBoostforintrusiondetection.
+• ThesystemwillutilizeunsupervisedanomalydetectionmethodssuchasIsolation
+Forest.
+• Thesystemwillevaluatemodelperformanceusingmetricssuchasaccuracy,pre-
+cision,recall,F1-score,andROC-AUC.
+• ThesystemwillincorporateLargeLanguageModels(LLMs)togeneratehuman-
+readableexplanations.
+• Thesystemwillfine-tunetwoLLMsusingLoRAondomain-specificcybersecu-
+rityknowledge.
+• ThesystemwillcomparetheperformanceofbaseLLMswithLoRA-tunedmod-
+els.
+3.1.2 Non-FunctionalRequirements
+• Performance: The system must be capable of processing large-scale datasets
+efficiently.
+• Scalability: The system must scale with increasing data size with minimal mod-
+ifications.
+14
+• Accuracy: The system should maintain high detection accuracy and low false
+positives.
+• Interpretability: The system must provide clear and understandable explana-
+tions.
+• Reliability: Thesystemisexpectedtoproduceconsistentanddependableresults.
+• Usability: Thesystemshouldbeuser-friendlythroughcommonlyusedtools.
+• Portability: The system must be operable on both local systems and cloud plat-
+forms.
+3.2 FEASIBILITYSTUDY
+TechnicalFeasibility: Thetechnicalfeasibilityoftheprojectisconfirmedbecauseit
+usescommonlyavailabletoolssuchasPython,Scikit-learn,andpre-trainedLLMs. The
+UNSW-NB15datasetispubliclyaccessibleandsuitablefortrainingintrusiondetection
+models. LoRA enables efficient fine-tuning of LLMs without requiring extensive com-
+putationalresources.
+Economic Feasibility: The project does not require costly infrastructure. It can be
+implemented using open-source tools and can optionally be run on platforms such as
+GoogleColab.
+Operational Feasibility: The system is designed to assist security analysts by au-
+tomating threat detection and providing explanations. This reduces the manual effort
+requiredtoanalyzelargevolumesoflogs.
+Time Feasibility: The project is achievable within the academic timeline due to a
+structured development plan involving preprocessing, model development, evaluation,
+andLLMintegration.
+UsageofSymbols ThesymbolsWeightparameter(α),Biasparameter(β),andChange
+invalue(∆)maybeusedwherenecessaryinmathematicalformulations.
+15
+3.3 SYSTEMSPECIFICATION
+3.3.1 HardwareSpecification
+• Processor: IntelCorei5/AMDRyzen5orabove.
+• RAM:8GBminimum(16GBrecommended).
+• Storage: 50GBormorefreespace.
+• ArchitectureType: 64-bitarchitecture.
+• GPU(Optional): NVIDIAGPUforfasterLLMfine-tuning.
+3.3.2 SoftwareSpecification
+• OperatingSystem: Windows/Linux/macOS.
+• ProgrammingLanguage: Python3.8orabove.
+• DevelopmentEnvironment: JupyterNotebook/GoogleColab.
+• Libraries:
+– NumPy,Pandas(dataprocessing)
+– Scikit-learn(MLmodels)
+– XGBoost(boostingmodel)
+– Matplotlib(visualization)
+– Transformers(LLMintegration)
+– PEFT/LoRAlibraries(fine-tuning)
+• Tools:
+– Git/GitHub(versioncontrol)
+16
+CHAPTER 4
+SYSTEM DESIGN
+4.1 SYSTEMARCHITECTURE
+Figure4.1: CybersecurityThreatDetectionArchitecture
+The proposed system architecture is designed to perform intelligent cybersecurity log
+analysis by integrating traditional Machine Learning (ML) models with Large Lan-
+guage Models (LLMs). The architecture shows automated threat detection, severity
+classification,explanationgeneration,andcomparativeperformanceevaluation.
+ThecompleteworkflowofthesystemisillustratedinFig.4.2.
+4.1.1 LogCollectionandDataIngestion
+The first stage of the architecture involves collecting cybersecurity logs from multiple
+sources. Theselogsserveastherawinputtothesystemandmayinclude:
+• Authenticationlogs
+• Firewalllogs
+17
+• Networktrafficlogs
+• Applicationlogs
+These heterogeneous logs contain both structured and semi-structured information
+relatedtonetworkactivityandsecurityevents.
+4.1.2 PreprocessingandNormalization
+The collected logs are passed through a preprocessing and normalization module. This
+moduleensuresthatthedataisclean,consistent,andsuitablefordownstreamanalysis.
+Thepreprocessingtasksinclude:
+• Removingredundantorirrelevantfields
+• Handlingmissingorinconsistentvalues
+• Encodingcategoricalattributes
+• Normalizingnumericalfeatures
+• Converting selected structured features into natural language prompts for LLM
+processing
+Thisstagecreatestwoparallelrepresentationsofthesamedata:
+1. StructurednumericalfeaturevectorsforMLmodels
+2. NaturallanguagepromptsforLLM-basedmodels
+4.1.3 MachineLearningModelPipeline
+The structured feature vectors are passed into the Machine Learning pipeline. This
+branchfocusesonfastandaccuratethreatseverityclassificationusingtraditionalstatis-
+ticallearningmethods.
+TheimplementedMLmodelsinclude:
+• XGBoost
+• RandomForest
+18
+• IsolationForest
+These models classify incoming logs into severity categories such as benign or mali-
+ciousandprovidehigh-performancebaselineintrusiondetection.
+4.1.4 Prompt-OnlyLLMPipeline
+In parallel, the natural language representation of the logs is passed to pre-trained
+prompt-onlyLLMs.
+Theevaluatedzero-shotLLMmodelsinclude:
+• Phi-4Mini
+• Llama-3.23B
+• Gemma-22B
+Thesemodelsperform:
+• Threatseverityclassification
+• Naturallanguageexplanationgeneration
+This pipeline demonstrates the reasoning capabilities of base LLMs without any
+domain-specificfine-tuning.
+4.1.5 LoRAFine-TunedLLMPipeline
+To improve domain-specific performance, a third parallel pipeline is introduced using
+LoRAfine-tunedLLMs.
+Thefine-tunedmodelsinclude:
+• Phi-4MiniwithLoRA
+• Llama-3.23BwithLoRA
+• Gemma-22BwithLoRA
+Thisbranchperforms:
+• Improvedseverityclassification
+19
+• Improvedexplanationgeneration
+LoRA fine-tuning enables efficient adaptation of LLMs to cybersecurity-specific
+taskswithoutretrainingthefullmodel.
+4.1.6 EvaluationandComparisonLayer
+Theoutputsfromallthreepipelinesareforwardedtoacentralizedevaluationandcom-
+parisonmodule.
+Thislayercomparesthemodelsusingmultiplemetricssuchas:
+• Accuracy
+• ExplanationQuality
+• Latency
+• ResourceUsage
+This enables a comprehensive assessment of performance trade-offs between tradi-
+tionalMLandmodernLLM-basedapproaches.
+4.1.7 FinalResultsandAnalysis
+Thefinalstageaggregatestheevaluationresultsandproducestheoverallanalysis.
+Thesystemidentifies:
+• Themostaccuratemodel
+• Themostresource-efficientmodel
+• Thebestmodelforexplainability
+• Themostbalancedmodelforpracticaldeployment
+Thisarchitectureensuresahybrid,scalable,andexplainablecybersecuritythreatde-
+tection framework capable of combining the strengths of both classical machine learn-
+ingandmodernlargelanguagemodels.
+20
+4.2 DETAILEDDESIGN
+Figure4.2: CybersecurityThreatDetectionArchitecture
+The diagram shows a cybersecurity threat detection system that uses both the forecast-
+ing abilities of normal Machine Learning (ML) and the thinking and explanation skills
+of Large Language Models (LLMs). The system is built in three main sections: bring-
+ing in the data, a Processing and Management Hub, and Comparing Results. Figure 1
+showshoweverythingworkstogether. ThecompleteworkflowisillustratedinFig.4.2.
+4.2.1 DataIngestionLayer
+The Data Ingestion layer is where the system gets its information. We’re using the
+UNSW-NB15datasetfornetworktraffic,andithasexamplesofbothnormalandharm-
+ful network activity, specifically Fuzzers, Exploits, DoS, Generic, Reconnaissance and
+Worms.
+Forthissystem,werandomlychose10,000oftheseexamples,makingsuretohave
+about the same number of each type of activity. This data then goes to a section for
+preparingitforuse.
+21
+4.2.2 ProcessingandManagementHub
+The Processing and Management Hub is the main part of the system; it changes the
+data, sends it to the correct place, and makes judgements. It has two separate, at the
+sametimeoperatingmethods: onewithtraditionalMLandoneusingLLMs.
+PreprocessingModule
+The preprocessing module prepares raw network traffic data for downstream analysis.
+Thefollowingpreprocessingoperationsareperformed:
+• DataCleaning: Removalofduplicate,incomplete,orinconsistentrecords.
+• FeatureSelection: Irrelevantattributessuchasidandattack catareremoved
+toavoidnoiseanddataleakage.
+• Categorical Encoding: Features such as proto, service, and state are trans-
+formedusingOne-HotEncoding.
+• NumericalPassthrough: Continuousfeaturessuchasbytecountsandflowrates
+areretainedintheiroriginalform.
+• Data Splitting: The dataset is divided into training and testing sets using an
+80:20ratiowithstratifiedsampling.
+Afterpreprocessing,thedataisroutedintotwodistinctpaths.
+4.2.3 ClassicalMachineLearningPipeline
+ThenumericaldatapathfeedsstructuredfeaturevectorsintotheClassicalMLPipeline
+forbinaryintrusiondetection.
+Thefollowingmodelsareimplemented:
+• RandomForest: Anensembleclassifierusingmultipledecisiontreestoimprove
+robustnessandreduceoverfitting.
+• XGBoost: A gradient boosting algorithm that provides strong predictive perfor-
+manceandhandlesclassimbalanceeffectively.
+22
+• IsolationForest: Anunsupervisedanomalydetectionmodeldesignedtoidentify
+unusualpatternsandpotentialzero-dayattacks.
+These models produce prediction outputs indicating whether network traffic is be-
+nignormalicious.
+4.2.4 LLM-BasedPipeline
+The textual mapping path converts structured numerical records into natural language
+promptssuitableforLargeLanguageModels.
+LLMInputRepresentation
+Selectedfeaturesaretransformedintodescriptivetextualprompts. Forexample:
+“Analyze this network traffic and provide a JSON-formatted threat evalu-
+ation: Network traffic using TCP protocol, service FTP, state FIN, source
+bytes1234...”
+TheoutputsareexpectedinastrictJSONformattoensuremachinereadabilityand
+easyintegrationintoSecurityOperationsCenters(SOCs).
+LLMInferenceandTuning
+TheLLMpipelineconsistsoftwomodesofoperation:
+• Zero-ShotInference: Pre-trainedinstruction-tunedLLMsareevaluatedwithout
+domain-specificadaptation.
+• LoRAFine-Tuning: Parameter-EfficientFine-TuningisappliedusingLow-Rank
+Adaptation (LoRA) with NF4 quantization to improve domain-specific perfor-
+mancewhileminimizingcomputationalrequirements.
+This pipeline produces structured outputs containing threat severity classifications
+andnaturallanguageexplanations.
+23
+4.2.5 ComparativeEvaluationLayer
+TheoutputsfrombothpipelinesareforwardedtotheComparativeEvaluationlayerfor
+analysis.
+Thefollowingperformancemetricsareused:
+• Accuracy
+• Precision
+• Recall
+• F1-Score
+• ROC-AUC
+• JSONValidityRate
+• SeverityClassificationAccuracy
+• ExplanationQuality
+Thislayerperformscomparativeperformanceanalysistoidentifythemostaccurate,
+explainable,andcomputationallyefficientmodel.
+4.2.6 FinalOutputandAnalysis
+Thefinalresultscombinetheoutputsfrombothpipelinestoprovide:
+• High-accuracybinaryintrusiondetectionusingMLmodels
+• SeverityclassificationandexplanationgenerationusingLLMs
+• Comparativeinsightsintoperformance,latency,andresourceutilization
+This hybrid architecture ensures a scalable, explainable, and efficient cybersecurity
+threatdetectionsystemsuitableforreal-worlddeployment.
+24
+CHAPTER 5
+METHODOLOGY AND TESTING
+5.1 METHODOLOGY
+This study proposes a hybrid cybersecurity threat detection framework that combines
+traditional machine learning (ML) models with Large Language Models (LLMs). The
+methodology is designed to evaluate and compare three approaches: (i) classical ML-
+based intrusion detection, (ii) zero-shot LLM inference, and (iii) LoRA fine-tuned
+LLMs.
+5.1.1 DatasetDescription
+The UNSW-NB15 dataset was used in this study for training and evaluating the pro-
+posedcybersecuritythreatdetectionsystem. ThedatasetwasgeneratedusingtheIXIA
+PerfectStormtoolintheCyberRangeLabatUNSWCanberraandconsistsofacombi-
+nationofrealmodernnetworktrafficandsyntheticattackbehaviors?.
+The dataset contains approximately 2.54 million network flow records with 49 fea-
+tures representing protocol attributes, traffic statistics, and temporal characteristics.
+Each record is labeled as either normal or malicious, with malicious samples catego-
+rized into nine attack types: Fuzzers, Analysis, Backdoors, DoS, Exploits, Generic,
+Reconnaissance,Shellcode,andWorms.
+DatasetUsageStrategy
+Toeffectivelyutilizethedatasetacrossdifferentmodelingapproaches,twodistinctdata
+usagestrategieswereadopted:
+• MachineLearningModels: Thefulldatasetwasusedtotrainandevaluateclas-
+sical machine learning models, ensuring maximum exposure to data variability
+andimprovinggeneralizationperformance.
+• LLM and LoRA Fine-Tuning: A randomly sampled subset of 10,000 records
+was used for LLM-based experiments. This was done due to computational con-
+25
+straints associated with fine-tuning large language models using LoRA, particu-
+larlyunderlimitedGPUmemory(LiMAconstraints).
+Thesampledsubsetwasgeneratedusingafixedrandomseedtoensurereproducibil-
+ity. An 80:20 train-test split with stratified sampling was applied to maintain class dis-
+tribution.
+5.1.2 DataPreprocessing
+The dataset was preprocessed to ensure consistency and prevent data leakage. Column
+nameswerestandardizedbyremovingleadingandtrailingwhitespaces. Thetargetlabel
+wasseparatedfrominputfeaturesforbinaryclassification.
+Irrelevant features such as id were removed due to lack of predictive value. The
+attack cat column was excluded to avoid data leakage, as it directly indicates attack
+types.
+Categoricalfeatures(proto,service,state)wereencodedusingOne-HotEncod-
+ing with handle unknown="ignore" to ensure robustness. A ColumnTransformer
+wasusedtoapplyencodingwhilepassingnumericalfeatureswithouttransformation.
+5.1.3 MachineLearningModels
+Threemachinelearningmodelswereimplementedasbaselineclassifiers:
+• RandomForest
+• XGBoost
+• IsolationForest(foranomalydetection)
+These models were trained on structured numerical data and evaluated using stan-
+dardmetricsincludingaccuracy,precision,recall,F1-score,andROC-AUC.
+5.1.4 LLMInputRepresentation
+Since LLMs cannot directly process tabular data, selected features were converted into
+natural language descriptions. Six key features were chosen (proto, service, state,
+sbytes,dbytes,rate)torepresenteachnetworkflow.
+Eachrecordwastransformedintoastructuredsentence:
+26
+Network traffic using {proto}, service {service}, state {state},
+source bytes {sbytes}, destination bytes {dbytes}, rate {rate}.
+Ground truth labels were formatted as JSON objects containing attack type and
+severity.
+5.1.5 Zero-ShotLLMEvaluation
+A zero-shot baseline was established using pre-trained instruction-tuned LLMs. Each
+inputwasprovidedasaprompt,andthemodelwasinstructedtooutputresultsinJSON
+format.
+The evaluation was conducted on a fixed subset of test samples to ensure consis-
+tency. Outputswerevalidatedandscoredbasedon:
+• ValidJSONRate
+• AttackTypeAccuracy
+• SeverityAccuracy
+5.1.6 LoRAFine-Tuning
+To improve domain-specific performance, LoRA (Low-Rank Adaptation) was applied
+to fine-tune two LLMs. LoRA enables efficient training by updating only low-rank
+adapterlayersinsteadoffullmodelweights.
+The fine-tuning process used supervised learning with instruction-response pairs.
+Modelsweretrainedusing4-bitquantization(NF4)toreducememoryusageandenable
+trainingonlimitedhardware.
+5.1.7 EvaluationandComparison
+All approaches (ML, zero-shot LLM, and LoRA-tuned LLM) were evaluated on the
+sametestsetforfaircomparison.
+MLmodelswereevaluatedusingclassificationmetrics,whileLLMswereevaluated
+usingstructuredoutputmetrics. Theresultswerecomparedtoanalyze:
+• Detectionaccuracy
+27
+• Robustnessofpredictions
+• Qualityofexplanations
+• ImpactofLoRAfine-tuning
+5.1.8 SystemOverview
+Theoverallsystempipelineconsistsof:
+1. Datapreprocessingandfeatureextraction
+2. ML-basedthreatdetection
+3. LLM-basedexplanationgeneration
+4. LoRAfine-tunedmodelevaluation
+5. Comparativeperformanceanalysis
+28
+CHAPTER 6
+PROJECT IMPLEMENTATION
+Thischapterdescribesthepracticalimplementationoftheproposedcybersecuritythreat
+detection framework. The system combines traditional machine learning (ML) models
+with Large Language Models (LLMs) to perform binary intrusion detection and gen-
+erate structured threat explanations. The framework is implemented in Python using a
+modular architecture consisting of preprocessing, model training, inference, and evalu-
+ationpipelines. Theimplementationisdividedintofivemajorphases.
+6.0.1 A.DataSelectionandPreprocessing
+TheUNSW-NB15datasetwasselectedforthisstudyduetoitscomprehensiverepresen-
+tation of modern network attack vectors, including Fuzzers, DoS, Exploits, Backdoors,
+Generic, Reconnaissance, Shellcode, Worms, and Analysis. The dataset was utilized in
+twoways:
+• Machine Learning Pipeline: The full dataset was used for training and evaluat-
+ingMLmodels.
+• LLM and LoRA Pipeline: A randomly sampled subset of 10,000 records was
+usedduetocomputationallimitationsassociatedwithLLMfine-tuning.
+The preprocessing pipeline (common.py) standardizes and transforms the raw data
+beforemodelingestion. Thefollowingstepsweresequentiallyapplied:
+• Feature Selection: Non-informative identifiers such as id and multiclass indi-
+cators such as attack cat were removed to prevent data leakage. The label
+columnwasextractedasthebinarytargetvariable.
+• Data Splitting: The dataset was divided into 80% training and 20% testing par-
+titionsusingstratifiedsamplingtopreservetheclassdistribution.
+• Categorical Encoding: The categorical features proto, service, and state
+weretransformedusingOne-HotEncodingwithhandle unknown="ignore".
+29
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import OneHotEncoder
+def build_preprocessor(X_train):
+categorical_columns = ["proto", "service", "state"]
+return ColumnTransformer(
+transformers=[
+("categorical",
+OneHotEncoder(handle_unknown="ignore"),
+categorical_columns),
+],
+remainder="passthrough"
+)
+Listing6.1: PreprocessingPipeline
+• Feature Passthrough: A ColumnTransformer was used to encode categorical
+variableswhileallowingnumericalfeaturestopassunchanged.
+For the LLM pipeline, selected structured features were converted into conversa-
+tionalnaturallanguageprompts. Forexample:
+def convert_flow_to_prompt(row):
+input_text = (
+f"Network traffic using {row[’proto’]} protocol, "
+f"service {row[’service’]}, state {row[’state’]}, "
+f"source bytes {row[’sbytes’]}, destination bytes {row[’dbytes’]}, "
+f"rate {row[’rate’]}."
+)
+output = {
+"severity": "HIGH" if row[’label’] == 1 else "LOW"
+}
+return {
+"messages": [
+{"role": "user", "content": input_text},
+{"role": "assistant", "content": json.dumps(output)}
+]
+}
+Listing6.2: ConversationalPreprocessingandJSONTargeting
+Ground truth labels were encoded into deterministic JSON structures containing
+threatseverityforstructuredevaluation.
+30
+6.0.2 B.MachineLearningModelImplementation
+Threedistinctmachinelearningmodelswereimplementedforintrusiondetection.
+RandomForestClassifier
+TheRandomForestmodel(rf.py)wasimplementedusing200decisiontrees(n estimators=200).
+Toaddressclassimbalance,class weight="balanced"wasapplied. Themodelgen-
+eratesfeatureimportanceplotsandROCcurvesduringtraining.
+rf_model = RandomForestClassifier(
+n_estimators=200,
+class_weight="balanced",
+random_state=42
+)
+rf_model.fit(X_train, y_train)
+Listing6.3: RandomForestTraining
+XGBoostClassifier
+TheXGBoostmodel(xg.py)wasconfiguredwith300boostingrounds(n estimators=300),
+a maximum depth of 6, and a learning rate of 0.1. A dynamic scale pos weight was
+computed to account for class imbalance. Subsampling and column sampling were set
+to0.8toreduceoverfitting.
+xgb_model = XGBClassifier(
+n_estimators=300,
+max_depth=6,
+learning_rate=0.1,
+subsample=0.8,
+colsample_bytree=0.8,
+scale_pos_weight=class_weight
+)
+xgb_model.fit(X_train, y_train)
+Listing6.4: XGBoostModelTraining
+IsolationForest
+The Isolation Forest model (isof.py) was implemented as an unsupervised anomaly
+detector with 200 estimators. The contamination factor was dynamically computed
+31
+from the training labels. Predictions were remapped to align with the binary classifica-
+tionschema.
+Eachtrainedmodel,preprocessingpipeline,andfeaturemetadatawereserializedas
+.joblibartifactsforinference.
+iso_forest = IsolationForest(
+n_estimators=200,
+contamination=estimated_contamination,
+random_state=42
+)
+iso_forest.fit(X_train)
+Listing6.5: IsolationForestTraining
+6.0.3 C.Zero-ShotLLMEvaluation
+A zero-shot inference pipeline was implemented to evaluate the out-of-the-box reason-
+ing capabilities of instruction-tuned LLMs. The raw natural language network flow
+promptsweredirectlypassedintothemodelsusingstrictprompttemplates.
+Thebaselineevaluationmeasured:
+• SeverityAccuracy
+• ValidJSONFormatRate
+Thisphaseservesastheexperimentalcontroltocompareagainstfine-tunedmodels.
+6.0.4 D.QLoRAFine-TuningandModelSelection
+To improve domain-specific performance, Quantized Low-Rank Adaptation (QLoRA)
+wasappliedforefficientfine-tuningofLLMsonconsumer-gradehardware.
+Thefollowingoptimizationswereused:
+• 4-BitQuantization: Modelswereloadedin4-bitNF4precisionusingthebitsandbytes
+library,reducingVRAMconsumption.
+• Adapter Injection: Trainable low-rank matrices (r =16) were injected into at-
+tentionprojectionlayerssuchasq projandv proj.
+32
+• Gradient Accumulation: Micro-batches were accumulated over multiple steps
+topreventOut-of-Memory(OOM)errors.
+ThreeLLMswereselectedforcomparativeanalysis:
+• Phi-4Mini
+• Llama-3.23B
+• Gemma-22B
+Themodelswerefine-tunedusinginstruction-responsepairsandevaluatedagainsttheir
+zero-shotcounterparts.
+bnb_config = BitsAndBytesConfig(
+load_in_4bit=True,
+bnb_4bit_quant_type="nf4"
+)
+lora_config = LoraConfig(
+r=32,
+lora_alpha=64,
+target_modules="all-linear",
+lora_dropout=0.05
+)
+Listing6.6: 4-BitQuantizationandLoRAConfiguration
+6.0.5 E.EvaluationandDashboardOrchestration
+A centralized evaluation framework was implemented to compare ML models, zero-
+shotLLMs,andLoRA-tunedLLMs.
+MachineLearningEvaluation
+Theevaluationscript(test.py)loadsserializedartifactsandcomputes:
+• Accuracy
+• Precision
+• Recall
+• F1-Score
+33
+• BalancedAccuracy
+• ROC-AUC
+ACSVsummaryandcomparativebarchartsaregeneratedautomatically.
+LLMEvaluation
+ForLLM-basedmodels,exactly200consistentseededtestflowswereevaluated.
+Metricsinclude:
+• SeverityAccuracy
+• ValidJSONFormatRate
+Theunifieddashboardgenerates:
+• Cross-EntropyLossCurvesforLoRAconvergence
+• ComparativeplotsofZero-ShotvsLoRAaccuracy
+ThisimplementationenablesacompletecomparativeanalysisofclassicalMLtech-
+niquesversusmodernLLM-basedcybersecuritythreatdetectionsystems.
+34
+CHAPTER 7
+RESULTS AND DISCUSSION
+This chapterpresents theexperimental resultsobtained fromthe implementationof the
+proposed hybrid cybersecurity threat detection framework. The performance of tradi-
+tionalmachinelearningmodels,unsupervisedanomalydetectiontechniques,andLarge
+Language Models (LLMs) enhanced with Quantized Low-Rank Adaptation (QLoRA)
+isanalyzedindetail.
+The objective of this evaluation is to understand how effectively each approach can
+identify malicious network traffic, classify threat severity, and provide reliable outputs
+suitableforpracticaldeploymentincybersecurityenvironmentssuchasSecurityOper-
+ationsCenters(SOCs).
+The experiments were conducted using the UNSW-NB15 dataset. For the machine
+learningmodels,theheld-outtestingpartitionwasusedtoensureanunbiasedevaluation
+of generalization capability. For the LLM-based framework, 200 seeded network flow
+sampleswereusedtomaintainconsistencyacrossallevaluatedmodels.
+Thefollowingevaluationmetricswereusedthroughouttheexperiments:
+• Accuracy
+• Precision
+• Recall
+• F1-Score
+• BalancedAccuracy
+• ROC-AUC
+• ValidJSONFormatRate
+• ThreatSeverityAccuracy
+35
+7.1 PERFORMANCEEVALUATIONOFMACHINELEARNINGMODELS
+Traditional supervised machine learning algorithms were first evaluated as the base-
+line intrusion detection mechanisms. These models were trained using the structured
+numericalandcategoricalfeaturesextractedfromtheUNSW-NB15dataset.
+TheoverallcomparisonofthemachinelearningmodelsisillustratedinFig.7.1and
+Fig.7.2.
+Figure7.1: ComparisonofPerformanceMetricsAcrossMachineLearningModels
+Figure7.2: AccuracyComparisonofMachineLearningModels
+7.1.1 RandomForestClassifier
+The Random Forest classifier demonstrated strong intrusion detection performance,
+achieving an overall accuracy of 87.05%. One of its strongest characteristics was its
+exceptionallyhighrecallof98.66%. Thisindicatesthatthemodelwashighlysensitive
+indetectingmalicioustrafficandproducedveryfewfalsenegatives.
+From a cybersecurity perspective, this is particularly valuable because failing to
+detectanattackcanbemoredangerousthangeneratingfalsealarms.
+36
+However,thisaggressivedetectionbehaviorresultedinaslightlylowerprecisionof
+81.64%, meaning that some benign traffic was incorrectly classified as malicious. The
+overallbalancebetweenprecisionandrecallresultedinanF1-scoreof89.35%.
+The model also achieved an excellent ROC-AUC score of 0.979, indicating strong
+discriminativecapabilityacrossmultipleclassificationthresholds.
+TheROCcurvefortheRandomForestmodelisshowninFig.7.3.
+Figure7.3: ROCCurveoftheRandomForestClassifier
+7.1.2 XGBoostClassifier
+Amongallthesupervisedmodels,XGBoostachievedthebestoverallperformance. The
+model recorded an accuracy of 90.56%, making it the most accurate machine learning
+classifierinthisstudy.
+Its precision of 87.44% was significantly higher than that of the Random Forest
+classifier, indicating fewer false positives. Although its recall of 96.75% was slightly
+lowerthanRandomForest,itstillremainedextremelystrong.
+ThisimprovedbalancebetweenprecisionandrecallresultedinthehighestF1-score
+of91.86%. Additionally,XGBoostachievedaBalancedAccuracyof89.86%,confirm-
+ingitseffectivenessinhandlingclassimbalance.
+ThemodelalsoachievedthehighestROC-AUCscoreof0.984,suggestingsuperior
+overalldiscriminativepower.
+TheROCcurveofXGBoostisshowninFig.7.4.
+37
+Figure7.4: ROCCurveoftheXGBoostClassifier
+7.2 EVALUATIONOFUNSUPERVISEDANOMALYDETECTION
+The Isolation Forest model was implemented to evaluate the feasibility of anomaly
+detectionwithoutrelyingonlabeledtrainingdata.
+7.2.1 IsolationForestPerformance
+TheperformanceofIsolationForestwassignificantlylowercomparedtothesupervised
+models. It achieved an overall accuracy of only 37.06%. Precision and recall were
+recordedas42.64%and41.41%,respectively,resultinginanF1-scoreof42.0%.
+The ROC-AUC score was only 0.342, indicating poor separation between normal
+andmalicioustraffic.
+Theseresultssuggestthatpurelyanomaly-baseddetectionmethodsstruggletocap-
+turethecomplex,non-linearrelationshipspresentinmodernnetworktrafficdatasets.
+TheanomalyscoredistributiongeneratedbythemodelisshowninFig.7.5.
+Figure7.5: IsolationForestAnomalyScoreDistribution
+38
+7.3 FEATUREIMPORTANCEANDINTERPRETABILITY
+Interpretability is an important requirement in cybersecurity applications because ana-
+lystsoftenneedtounderstandwhyadecisionwasmade.
+Toimprovetransparency,featureimportanceanalysiswasperformedonbothsuper-
+visedmodels.
+FortheRandomForestmodel,featureimportancewasextractedusingGiniimpurity
+reduction. ForXGBoost,gain-basedfeatureimportancescoreswereused.
+TheresultsareshowninFig.7.6andFig.7.7.
+Figure7.6: TopFeatureImportancesinRandomForest
+Figure7.7: TopFeatureImportancesinXGBoost
+Both models consistently identified connection states, byte transfer metrics, and
+networkprotocolsasthemostimportantindicatorsofmaliciousactivity.
+This consistency suggests that the models are learning meaningful attack-related
+patternsratherthanoverfittingtonoise.
+39
+7.4 LLMANDQLORA-BASEDTHREATDETECTIONRESULTS
+To evaluate the effectiveness of Large Language Models in cybersecurity threat analy-
+sis,threeinstruction-tunedmodelsweretestedinbothzero-shotandQLoRAfine-tuned
+settings.
+Theevaluatedmodelswere:
+• MicrosoftPhi-4Mini
+• MetaLlama-3.23B
+• GoogleGemma-22B
+Theprimaryevaluationmetricsforthisstagewere:
+• ValidJSONFormatRate
+• ThreatSeverityAccuracy
+7.4.1 Zero-ShotBaselinePerformance
+The zero-shot baseline results revealed the limitations of out-of-the-box LLMs when
+appliedtostructuredcybersecuritytasks.
+Phi-4 Mini achieved the best zero-shot severity classification accuracy of 48.5%.
+Gemma-2followedwith45.5%,whileLlama-3.2performedtheworstat32.0%.
+In terms of output formatting reliability, Phi-4 Mini and Gemma-2 achieved a per-
+fect 100% Valid JSON Rate, whereas Llama-3.2 achieved only 84.0%, indicating oc-
+casionalhallucinationsorformattinginconsistencies.
+Thesefindingsindicatethatpre-trainedLLMspossesssomegeneralreasoningcapa-
+bilitybutlackdomain-specificunderstandingforaccuratecybersecuritythreatanalysis.
+7.4.2 ImpactofQLoRAFine-Tuning
+TheapplicationofQLoRAsignificantlyimprovedtheperformanceofallmodels.
+The most significant improvement was observed in Phi-4 Mini, where Severity Ac-
+curacyincreasedfrom48.5%to92.0%.
+Similarly:
+40
+• Gemma-2improvedto73.0%
+• Llama-3.2improvedto74.0%
+Additionally, all fine-tuned models achieved a perfect 100% Valid JSON Rate,
+completelyeliminatingformattinghallucinations.
+TheLoRAtrainingconvergenceisshowninFig.7.8.
+Figure7.8: LoRAFine-TuningProgression(Cross-EntropyLoss)
+ThefinalseverityaccuracycomparisonisshowninFig.7.9.
+Figure7.9: ComparisonofZero-ShotandQLoRA-TunedLLMSeverityAccuracy
+7.4.3 ComparativeAnalysis
+Amongtheevaluatedmodels,Phi-4Miniconsistentlyoutperformedtheothers.
+This may be due to its strong reasoning-focused architecture and its pre-training
+on synthetic and structured tasks, which likely improved adaptation to deterministic
+cybersecurityworkflows.
+Llama-3.2 and Gemma-2, while strong general-purpose conversational models, re-
+quiredmoreadaptationtoachievecompetitiveresults.
+41
+7.4.4 ComputationalFeasibility
+Theuseof4-bitNF4quantizationandlow-rankadapters(r=16)madelocalfine-tuning
+possibleonconsumer-gradehardware.
+The evaluation of 200 flows required between 250 and 538 seconds, depending on
+themodel.
+This demonstrates the feasibility of privacy-preserving, local deployment without
+relianceoncloudinfrastructure.
+7.5 DISCUSSION
+The results clearly demonstrate that supervised machine learning models outperform
+unsupervised anomaly detection models for binary intrusion detection on the UNSW-
+NB15dataset.
+Among the supervised models, XGBoost achieved the best overall balance of per-
+formancemetrics,makingitthestrongestcandidateforpracticaldeployment.
+RandomForestachievedthehighestrecall,makingitsuitableinenvironmentswhere
+minimizingmissedattacksisthetoppriority.
+ThepoorperformanceofIsolationForesthighlightsthelimitationsofpurelyanomaly-
+basedmethods.
+The LLM experiments further demonstrate that zero-shot models are insufficient
+for domain-specific cybersecurity tasks. However, QLoRA fine-tuning dramatically
+improvesbothaccuracyandreliability.
+Among the evaluated LLMs, Phi-4 Mini emerged as the most effective model for
+severityclassificationandstructuredoutputgeneration.
+Overall, the proposed hybrid framework successfully combines the high detection
+accuracyoftraditionalmachinelearningmodelswiththeinterpretabilityandreasoning
+capabilitiesoffine-tunedLargeLanguageModels.
+42
+CHAPTER 8
+CONCLUSION AND FURTHER ENHANCEMENTS
+8.1 CONCLUSION
+This project proposed and implemented a hybrid cybersecurity threat detection frame-
+work that combines the strengths of traditional Machine Learning (ML) models with
+the reasoning capabilities of Large Language Models (LLMs). The objective of the
+systemwastoaccuratelydetectmaliciousnetworkactivity,classifythreatseverity,and
+generateexplainableoutputssuitableforreal-worldcybersecurityenvironments.
+ThesystemwasevaluatedusingtheUNSW-NB15dataset,whichprovidesarealistic
+representation of modern network traffic containing both benign and malicious activ-
+ities. A comprehensive preprocessing pipeline was designed to clean, transform, and
+preparethedataforbothstructuredML-basedanalysisandtext-basedLLMinference.
+Onthemachinelearningside,threemodelswereimplementedandevaluated: Ran-
+dom Forest, XGBoost, and Isolation Forest. Among these, XGBoost achieved the
+highest overall performance with an accuracy of 90.56%, an F1-score of 91.86%, and
+an ROC-AUC of 0.984. Random Forest demonstrated exceptionally high recall, mak-
+ing it suitable in environments where minimizing false negatives is critical. Isolation
+Forest, while useful as an anomaly detection baseline, showed significantly lower per-
+formance, highlighting the limitations of purely unsupervised approaches on complex
+moderndatasets.
+On the LLM side, three instruction-tuned models—Phi-4 Mini, Llama-3.2 3B, and
+Gemma-2 2B—were evaluated in both zero-shot and QLoRA fine-tuned settings. The
+zero-shot models demonstrated limited domain-specific understanding, with severity
+classification accuracies ranging between 32% and 48.5%. However, after applying
+Quantized Low-Rank Adaptation (QLoRA), substantial improvements were observed
+acrossallmodels.
+Among the evaluated LLMs, Phi-4 Mini achieved the best performance after fine-
+tuning, reaching a severity classification accuracy of 92% while maintaining a 100%
+valid JSON output rate. This demonstrates that parameter-efficient fine-tuning can
+significantlyimprovetheeffectivenessandreliabilityofLLMsincybersecurity-specific
+43
+tasks.
+The results clearly show that traditional machine learning models excel in fast and
+accurate binary intrusion detection, while fine-tuned LLMs provide strong reasoning,
+explanation generation, and structured threat analysis. By integrating both approaches,
+the proposed framework offers a balanced solution that is accurate, explainable, and
+scalable.
+Overall,thisprojectsuccessfullydemonstratesthepracticalfeasibilityofdeploying
+ahybridAI-drivencybersecuritythreatdetectionsystemcapableofsupportinganalysts
+inSecurityOperationsCenters(SOCs)andotherreal-worldenvironments.
+8.2 FURTHERENHANCEMENTS
+Although the proposed system achieved promising results, several enhancements can
+bemadeinfutureworktoimproveperformance,scalability,andpracticalusability.
+8.2.1 Real-TimeLogMonitoring
+Currently, the system operates on offline datasets. Future work can integrate real-time
+logingestionfromlivesourcessuchas:
+• SIEMsystems
+• Firewallappliances
+• IntrusionDetectionSystems(IDS)
+• Cloudsecuritylogs
+Thiswouldenablecontinuousreal-timethreatdetectionandalertgeneration.
+8.2.2 IntegrationwithSecurityTools
+Thesystemcanbeintegratedwithexistingcybersecuritytoolsandplatformssuchas:
+• Splunk
+• ELKStack
+• Wazuh
+44
+• IBMQRadar
+Thiswouldimproveadoptioninenterpriseenvironments.
+8.2.3 AdvancedLLMFine-Tuning
+Futureworkcanexplore:
+• Fullfine-tuningofLLMsonlargerGPUclusters
+• ReinforcementLearningfromHumanFeedback(RLHF)
+• Retrieval-AugmentedGeneration(RAG)forcontextualthreatintelligence
+Theseapproachesmayimprovereasoningandcontextualawareness.
+8.2.4 ExpandedDatasetSupport
+Thesystemcanbeevaluatedonadditionalcybersecuritydatasetssuchas:
+• CICIDS2017
+• CSE-CIC-IDS2018
+• NSL-KDD
+Thiswouldtestgeneralizationacrossdiverseattackenvironments.
+8.2.5 ExplainableAIEnhancements
+Futureworkcanimproveinterpretabilitybyintegrating:
+• SHAP(SHapleyAdditiveExplanations)
+• LIME(LocalInterpretableModel-AgnosticExplanations)
+Thiswouldprovidedeeperinsightintomodeldecisions.
+8.2.6 DeploymentandOptimization
+The system can be deployed as a web-based dashboard or cloud-native microservice
+architecturetoimproveaccessibilityandscalability.
+Further optimization techniques such as model pruning, quantization, and ONNX
+accelerationcanreduceinferencelatency.
+45
+8.3 FINALREMARK
+Cybersecurity threats continue to evolve rapidly, requiring intelligent systems that not
+onlydetectattacksaccuratelybutalsoprovideunderstandableandactionableinsights.
+ThisprojectdemonstratesthatthecombinationoftraditionalMachineLearningand
+modern Large Language Models can create a powerful next-generation cybersecurity
+analysis framework. With further refinement and real-world integration, such systems
+have the potential to significantly enhance automated threat detection and analyst pro-
+ductivity.
+46
+BIBLIOGRAPHY
+Ali and Kostakos (2023). Huntgpt: An explainable ai framework for network intrusion
+detectionusinglargelanguagemodels.
+AroraandKaur(2020). Abolassobasedrandomforestapproachforcreditriskassess-
+ment.
+et al., A. (2021). A comparative study of ensemble learning methods for student per-
+formanceprediction.
+etal.,A.(2023a). Xgboost: Areviewofitsapplicationsandcomparativeanalysis.
+et al., A. (2024a). Real-time fraud detection using isolation forest in distributed archi-
+tectures.
+etal.,B.(2019a). Acomparativeanalysisofgradientboostingalgorithms.
+et al., B. (2020). An optimized xgboost algorithm for the diagnosis of heart disease
+usingbayesiantuning.
+et al., B. J. (2022a). Bankruptcy prediction using a feature selection-based xgboost
+model.
+et al., C. (2018a). A hybrid model of xgboost with under-sampling for credit risk pre-
+diction.
+et al., C. (2018b). Random forest versus logistic regression: a large-scale benchmark
+inventory.
+et al., C. (2019b). A two-layer anomaly detection ensemble using isolation forest and
+localoutlierfactor.
+etal.,C.(2022b). Parameterstudyofisolationforestforintrusiondetectionsystems.
+et al., C. (2023b). Bs-iforest: Box-plot sampling and tree selection for robust isolation
+forest.
+47
+et al., C. S. (2025a). Transformer-based llms in cybersecurity: An in-depth study on
+loganomalydetectionandconversationaldefensemechanisms.
+et al., D. (2025b). Labeling network intrusion detection system (nids) rules with mitre
+att&cktechniques: Machinelearningvs.largelanguagemodels.
+et al., E. (2025c). Hybrid cnn-lstm-ae framework with llm-driven sentiment analysis
+foranomalydetection.
+et al., E. (2026). A hybrid cnn–lstm–attention framework for intrusion detection in
+smartmobilitynetworks.
+etal.,F.(2023c). Securitybert: Alightweighttransformer-basedmodelforcyberthreat
+detectioniniotnetworks.
+etal.,H.(2024b). Explainabilityofresponsesingpt-4andllamafornetworksecurity.
+et al., H. (2025d). ex-nids: A framework for explainable network intrusion detection
+leveraginglargelanguagemodels.
+et al., I. (2024c). An improved random forest classifier using deformed entropy infor-
+mationgains.
+etal.,I.(2025e).Randomforestvsxgboost: Acomparativestudyunderclassimbalance
+usingsmote.
+et al., J. (2025f). Explainable anomaly detection in network traffic using llm as an
+interpreter.
+et al., K. (2023d). Benchmarking large language models for cybersecurity: A study on
+fine-tuning60languagemodels.
+et al., K. (2025g). Ae–elm ids: A novel autoencoder and extreme learning machine
+basedintrusiondetectionsystem.
+et al., M. (2017). Big data analytics for intrusion detection systems: A statistical
+decision-makingframework.
+et al., M. (2022c). Lionforests: Local interpretation of random forests for security
+analysis.
+48
+etal.,M.(2025h). Asemanticriskscoringframeworkforiotsecurityusinggpt-4omini
+andisolationforests.
+et al., N. (2024d). The application of xgboost in scientific prediction: A systematic
+review.
+et al., N. (2024e). Fine-tuning and embedding-based large language models for iot
+intrusiondetection.
+etal.,P.(2024f). Randomforestforpredictionaccuracy: Asurveyandreviewofcurrent
+trends.
+et al., P. (2025i). Large language models for system log analysis: A comparative study
+withclassicalmachinelearning.
+et al., R. (2023e). Explainable isolation forest: Shap-based feature weighting for im-
+provedanomalydetection.
+et al., S. (2016). Extreme gradient boosting as a method for quantitative struc-
+ture–activityrelationships.
+etal.,S.(2019c). Acomparisonofrandomforestvariableselectionmethodsforclassi-
+ficationandregression.
+et al., S. (2024g). Hybrid machine learning and deep learning approach for robust
+intrusiondetectionsystems.
+et al., S. (2024h). Random forest algorithm: A comprehensive conceptual review and
+applicationguide.
+etal.,S.L.(2024i). Limitationsofisolationforestinsoftwaredefinednetworksecurity.
+et al., X. (2022d). Deep isolation forest for anomaly detection with random neural
+representations.
+et al., X. (2023f). Optiforest: An optimized isolation forest using multi-fork optimal
+trees.
+et al., X. (2024j). Llm4security: A systematic review of large language models for
+cybersecurity.
+49
+et al., Y. (2025j). Large language models in network intrusion detection: A systematic
+reviewandoperationalframework.
+etal.,Z.(2023g). Lima: Lessismoreforalignment.
+hammourietal.,A.(2025). Zeroday-llm: Alargelanguagemodelframeworkforzero-
+daythreatdetectionincybersecurity.
+Jaiswal and Samikannu (2017). Performance evaluation of random forest on high di-
+mensionaldata.
+Kheddar (2024). Intrusion detection systems based on large language models: A com-
+prehensivesurveyandfuturedirections.
+MitchellandFrank(2017).Acceleratingthexgboostalgorithmusinggpu-basedparallel
+computing.
+MoustafaandSlay(2015). Unsw-nb15: acomprehensivedatasetfornetworkintrusion
+detectionsystems.
+MoustafaandSlay(2016). Theevaluationofnetworkanomalydetectionsystems: Sta-
+tisticalanalysisoftheunsw-nb15dataset.
+Rajathi and Rukmani (2025). A hybrid stacking-based intrusion detection system for
+advancedpersistentthreats.
+50
+Appendix A Sample Code
+-
+/* C or C++ programming **/
+#include <iostream>
+using namespace std;
+int main() {
+int a = 5, b = 10;
+cout << "Before swap: a = " << a << ", b = " << b << endl;
+int temp = a;
+a = b;
+b = temp;
+cout << "After swap: a = " << a << ", b = " << b << endl;
+return 0;
+}
+/* Java programming **/
+public class SwapNumbers {
+public static void main(String[] args) {
+int a = 5, b = 10;
+System.out.println("Before swap: a = " + a + ", b = " + b);
+int temp = a;
+a = b;
+b = temp;
+System.out.println("After swap: a = " + a + ", b = " + b);
+}
+}
+/* Python programming **/
+a = 5
+b = 10
+print(f"Before swap: a = {a}, b = {b}")
+a, b = b, a # Pythonic swap
+print(f"After swap: a = {a}, b = {b}")
+/* Javascript programming **/
+let a = 5, b = 10;
+console.log(‘Before swap: a = ${a}, b = ${b}‘);
+let temp = a;
+a = b;
+b = temp;
+console.log(‘After swap: a = ${a}, b = ${b}‘);
+51
+Appendix B Publication details
+-
+• Apruzzese, G., Laskov, P., Montes de Oca, E., Mallouli, W., Brdalo Rapa, L.,
+Grammatopoulos,A.V.,&DiFranco,F.(2023). Theroleofmachinelearningin
+cybersecurity. DigitalThreats: ResearchandPractice,4(1),1-38.
+• Kumar, S., Gupta, U., Singh, A. K., & Singh, A. K. (2023). AI: Revolutionizing
+cybersecurityintheDigitalEra.J.Comput. Mech. Manag,2(3),31-42.
+52
