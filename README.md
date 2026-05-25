@@ -1,4 +1,4 @@
-# 🛡️ Cybersec Log Analysis using LLMs and LoRA Fine-Tuning
+#  Cybersecurity Log Analysis using LLMs and LoRA Fine-Tuning
 
 > A Capstone research project that builds a locally-hosted, privacy-preserving pipeline for automated network threat classification. It establishes a **6-Model Comparative Architecture** — pitting three Base LLMs (Zero-Shot) against their LoRA Fine-Tuned variants — using the UNSW-NB15 dataset.
 
@@ -16,15 +16,15 @@ The answer is proven empirically across three model families.
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 UNSW-NB15 Dataset (175k+ rows)
         │
         ▼
 ┌──────────────────────────────┐
-│   prepare_lora.py            │  ← Converts CSV → conversational JSONL
-│   80/20 Train/Test Split     │     train.jsonl (8,000) | test.jsonl (2,000)
+│   prepare_lora.py            │  ← Converts CSV
+│   80/20 Train/Test Split     │  
 └──────────────────────────────┘
         │
    ┌────┴──────────────────────────────────────┐
@@ -169,15 +169,7 @@ python evaluate_zero_shot.py
 - 175,341 records of real and synthetic network traffic
 - 9 attack categories: *Fuzzers, Analysis, Backdoor, DoS, Exploits, Generic, Reconnaissance, Shellcode, Worms*
 - Features translated from tabular CSV → natural language for LLM consumption
-
 ---
-
 ## 🔬 Methodology
 
 See [Methodology_Report.md](./Methodology_Report.md) for a full technical breakdown of the data preprocessing, QLoRA training process, and evaluation design.
-
----
-
-## 👤 Author
-
-**Rahul** — Capstone Project, 2026
